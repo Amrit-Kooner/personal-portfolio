@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio">
+    <meta name="author" content="Amrit Saab Kooner">
+    <!-- LINK  -->
+    <link rel="shortcut icon" type="image/icon" href="img/icons/smile.svg">
+    <link rel="stylesheet"href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Roboto&display=swap" rel="stylesheet">
+    <!-- SCRIPT -->
+    <script src="script/app.js" defer></script>
+    <script src="https://kit.fontawesome.com/64885c474e.js" defer crossorigin="anonymous"></script>
+    <!-- TITLE -->
+    <title>Portfolio - Logistic Regression Algorithm Project</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="sidebar-btn tooltip-element" data-tooltip="SIDEBAR">
+            <img class="sidebar-icon" src="img/icons/chevrons-down.svg" alt="Sidebar Toggle Icon">
+        </button>
+
+        <button class="burger-menu-btn tooltip-element" data-tooltip="BURGER MENU">
+            <img class="burger-icon" src="img/icons/x.svg" alt="Burger Menu Icon">
+        </button>
+    </header>
+
+    <nav class="burger-menu">
+        <ul>
+            <li><a href="index.html#home">home</a></li>
+            <li><a href="index.html#skills">skills</a></li>
+            <li><a href="index.html#projects">projects</a></li>
+            <li><a href="index.html#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <aside class="sidebar">
+        <div class="sidebar-socials">
+            <a class="linkedin-link tooltip-element" data-tooltip="LINKEDIN" href="https://www.linkedin.com/in/amrit-kooner/" target="_blank">
+                <img src="img/icons/linkedin.svg" alt="Linkedin Link">
+            </a>
+            <a class="github-link tooltip-element" data-tooltip="GITHUB" href="https://github.com/Amrit-Kooner" target="_blank">
+                <img src="img/icons/github.svg" alt="GitHub Link">
+            </a>
+            <a class="instagram-link tooltip-element" data-tooltip="INSTAGRAM" href="#" target="_blank">
+                <img src="img/icons/instagram.svg" alt="Instagram Link">
+            </a>
+            <a class="email-link tooltip-element" data-tooltip="EMAIL" href="#" target="_blank">
+                <img src="img/icons/mail.svg" alt="Email Link">
+            </a>
+        </div>
+
+        <span class="sidebar-divider">‎</span>
+
+        <div class="sidebar-logic">
+            <button class="theme-btn tooltip-element" data-tooltip="THEME">
+                <img class="theme-icon" src="img/icons/moon.svg" alt="Theme Toggle Icon">
+            </button>
+            <button class="volume-btn tooltip-element" data-tooltip="VOLUME">
+                <img class="volume-icon" src="img/icons/volume-x.svg" alt="Volume Toggle Icon">
+            </button>
+            <a class="settings-btn tooltip-element" data-tooltip="SETTINGS" href="#">
+                <img src="img/icons/settings.svg" alt="Settings Icon">
+            </a>
+            <a class="top-btn tooltip-element" data-tooltip="BACK TO TOP" href="#home">
+                <img src="img/icons/arrow-up-circle.svg" alt="Back-To-Top Icon">
+            </a>
+        </div>
+    </aside> 
+
+    <main class="main">
+        <section class="solo-project-section">
+            <div class="container">
+                <div class="title-container">
+                    <h1 class="section-title">logistic regression algorithm</h1>
+                    <a href="index.html#projects"><i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+       
+                <div class="layout">
+                    <div class="slideshow" data-slider>
+                        <!-- tutorial used: https://www.youtube.com/watch?v=9HcxHDS2w1s&t=740s&ab_channel=WebDevSimplified -->
+                        <ul data-slides>
+                            <li data-active><img src="img/project-imgs/logistic-regression/1.JPG" alt="slider image 1"></li>
+                            <li><img src="img/project-imgs/logistic-regression/2.JPG" alt="slider image 2"></li>
+                            <li><img src="img/project-imgs/logistic-regression/3.JPG" alt="slider image 3"></li>
+                            <li><img src="img/project-imgs/logistic-regression/4.JPG" alt="slider image 4"></li>
+                            <li><img src="img/project-imgs/logistic-regression/5.JPG" alt="slider image 5"></li>
+                            <li><img src="img/project-imgs/logistic-regression/6.JPG" alt="slider image 6"></li>
+                        </ul>
+
+                        <button class="slideshow-btn prev" data-slider-btn="prev"><i class="fa-solid fa-caret-left"></i></button>
+                        <button class="slideshow-btn next" data-slider-btn="next"><i class="fa-solid fa-caret-right"></i></button>
+
+                        <div class="pagination">
+                            <div class="dot active-dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="btn-container">
+                        <a href="https://colab.research.google.com/drive/1k9V_gNICvxd1-e2rVeBScICU9079l4EL?usp=sharing#scrollTo=Lwfm_ULKWiBV" class="btn" target="_blank">demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/Amrit-Kooner/supervised-multiclassification-logistic-regression-algorithm" class="btn" target="_blank">github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                    <div class="description">
+                        <div class="creation-date">15/01/23</div>
+                        <p>
+                            This project was created at my University for my Artificial Intelligence and Machine Learning module, where I collaborated with a team of four members to create supervised machine learning algorithms for predicting 
+                            spectral classes based on a given dataset. Each team member was responsible for developing a distinct algorithm model suited to our dataset. I chose to implement a logistic regression algorithm for this purpose. 
+                            We used Python, along with libraries such as Scikit-learn for machine learning, Pandas for data manipulation, and Seaborn/Matplotlib for data visualization. Our dataset comprised 17 features and 100,000 observations, 
+                            representing real-world data related to stellar classification. The goal was to predict the spectral class of each observation, which could be one of three possibilities: star, galaxy, or quasar. One of the 17 features 
+                            served as the target variable for this supervised multiclass classification problem, establishing the ground truth for our models. We aimed to build and compare four different classification models to accurately predict 
+                            the spectral class of each observation. Overall, it took the team around 2 months to complete as we had to also make a report with the algorithm. It was a very interesting and fun project. From it, I learned many new topics 
+                            throughout this module involving Machine Learning with developing a supervised classification algorithm being logistic regression using libraries such as pandas, NumPy, and Scikit-Learn. As well as comparing it with other 
+                            developed classification algorithms with graph visualization using libraries such as Matplotlib, Seaborn, and Yellowbrick.
+                        </p>
+
+                        <div class="features">
+                            <h3>features</h3>
+                            <ul>
+                                <li>Algorithm was trained on a dataset which contains 17 features and 100,000 observations that represent real-world data for
+                                    the concept of stellar classification where a spectral class is determined based on its characteristics.</li>
+                                <li>The ata pre-processing phase involved feature selection, data cleaning, data encoding, data scaling and data transformation.</li>
+                                <li>Techniques used involved random under sampling, normalization, IQR, feature dropping and dataset splitting.</li>
+                                <li>Algorithm was tested on both SEEN and UNSEEN data.</li>
+                            </ul>
+                        </div>
+
+                        <a class="btn" href="doc/logRegAlgoReport.pdf" target="_blank">report <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-tags scrollable">
+                    <div>python</div>
+                    <div>ai / ml</div>
+                    <div>multi-classification</div>
+                    <div>logistic regression</div>
+                    <div>pandas</div>
+                    <div>numpy</div>
+                    <div>seaborn</div>
+                    <div>matplotlib</div>
+                </div>
+            </div>
+        </section>
+    </main> 
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio">
+    <meta name="author" content="Amrit Saab Kooner">
+    <!-- LINK  -->
+    <link rel="shortcut icon" type="image/icon" href="img/icons/smile.svg">
+    <link rel="stylesheet"href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Roboto&display=swap" rel="stylesheet">
+    <!-- SCRIPT -->
+    <script src="script/app.js" defer></script>
+    <script src="https://kit.fontawesome.com/64885c474e.js" defer crossorigin="anonymous"></script>
+    <!-- TITLE -->
+    <title>Portfolio - Personal Portfolio Website Project</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="sidebar-btn tooltip-element" data-tooltip="SIDEBAR">
+            <img class="sidebar-icon" src="img/icons/chevrons-down.svg" alt="Sidebar Toggle Icon">
+        </button>
+
+        <button class="burger-menu-btn tooltip-element" data-tooltip="BURGER MENU">
+            <img class="burger-icon" src="img/icons/x.svg" alt="Burger Menu Icon">
+        </button>
+    </header>
+
+    <nav class="burger-menu">
+        <ul>
+            <li><a href="index.html#home">home</a></li>
+            <li><a href="index.html#skills">skills</a></li>
+            <li><a href="index.html#projects">projects</a></li>
+            <li><a href="index.html#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <aside class="sidebar">
+        <div class="sidebar-socials">
+            <a class="linkedin-link tooltip-element" data-tooltip="LINKEDIN" href="https://www.linkedin.com/in/amrit-kooner/" target="_blank">
+                <img src="img/icons/linkedin.svg" alt="Linkedin Link">
+            </a>
+            <a class="github-link tooltip-element" data-tooltip="GITHUB" href="https://github.com/Amrit-Kooner" target="_blank">
+                <img src="img/icons/github.svg" alt="GitHub Link">
+            </a>
+            <a class="instagram-link tooltip-element" data-tooltip="INSTAGRAM" href="#" target="_blank">
+                <img src="img/icons/instagram.svg" alt="Instagram Link">
+            </a>
+            <a class="email-link tooltip-element" data-tooltip="EMAIL" href="#" target="_blank">
+                <img src="img/icons/mail.svg" alt="Email Link">
+            </a>
+        </div>
+
+        <span class="sidebar-divider">‎</span>
+
+        <div class="sidebar-logic">
+            <button class="theme-btn tooltip-element" data-tooltip="THEME">
+                <img class="theme-icon" src="img/icons/moon.svg" alt="Theme Toggle Icon">
+            </button>
+            <button class="volume-btn tooltip-element" data-tooltip="VOLUME">
+                <img class="volume-icon" src="img/icons/volume-x.svg" alt="Volume Toggle Icon">
+            </button>
+            <a class="settings-btn tooltip-element" data-tooltip="SETTINGS" href="#">
+                <img src="img/icons/settings.svg" alt="Settings Icon">
+            </a>
+            <a class="top-btn tooltip-element" data-tooltip="BACK TO TOP" href="#home">
+                <img src="img/icons/arrow-up-circle.svg" alt="Back-To-Top Icon">
+            </a>
+        </div>
+    </aside> 
+
+    <main class="main">
+        <section class="solo-project-section">
+            <div class="container">
+                <div class="title-container">
+                    <h1 class="section-title">personal portfolio website</h1>
+                    <a href="index.html#projects"><i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+       
+                <div class="layout">
+                    <div class="slideshow" data-slider>
+                        <!-- tutorial used: https://www.youtube.com/watch?v=9HcxHDS2w1s&t=740s&ab_channel=WebDevSimplified -->
+                        <ul data-slides>
+                            <li data-active><img src="img/project-imgs/portfolio/1.JPG" alt="slider image 1"></li>
+                            <li><img src="img/project-imgs/portfolio/2.JPG" alt="slider image 2"></li>
+                            <li><img src="img/project-imgs/portfolio/3.JPG" alt="slider image 3"></li>
+                            <li><img src="img/project-imgs/portfolio/4.JPG" alt="slider image 4"></li>
+                            <li><img src="img/project-imgs/portfolio/5.JPG" alt="slider image 5"></li>
+                            <li><img src="img/project-imgs/portfolio/6.JPG" alt="slider image 6"></li>
+                            <li><img src="img/project-imgs/portfolio/7.JPG" alt="slider image 7"></li>
+                            <li><img src="img/project-imgs/portfolio/8.JPG" alt="slider image 8"></li>
+                        </ul>
+
+                        <button class="slideshow-btn prev" data-slider-btn="prev"><i class="fa-solid fa-caret-left"></i></button>
+                        <button class="slideshow-btn next" data-slider-btn="next"><i class="fa-solid fa-caret-right"></i></button>
+
+                        <div class="pagination">
+                            <div class="dot active-dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+
+                    <div class="btn-container">
+                        <a href="#" class="btn" target="_blank">demo</a>
+                        <a href="https://github.com/Amrit-Kooner/personal-portfolio" class="btn" target="_blank">github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                    <div class="description">
+                        <div class="creation-date">31/09/23</div>
+                        <p>
+                            This project is my personal proudest and most well-built in terms of UI design and code, as it's very clean using best practices in HTML, CSS, and JavaScript. 
+                            A lot of time and care was put into this project as it's my most important one since it’s a portfolio, it will be my first project that potential employers see.  
+                            And because of this, I wanted to make it more personalized and unique to make it stand out more. So I incorporated many features, such as a sidebar menu having 
+                            utility buttons like a mute and settings button. It has a mute button as it was intended to have sound effects with interactable, and a settings page where the 
+                            user can personalize and alter the color of the website. However, the logic for the mute and settings buttons hasn’t yet been implemented due to time constants. 
+                            It was my first project have utilized transition animations which were used on the burger menu and sidebar, and my first that used CSS grid-box which was used on 
+                            the projects and skills page.
+                            Overall, it was a very difficult and stress-worthy project as I don’t see myself as a good designer even though the design here is very aesthetic, 
+                            it took me a while to think of these design choices. Also, since it had many complex components and logic, such as the sidebar and burger menu
+                            incorporated with JavaScript for toggling their status and loading/saving their state in the user’s local storage. This project took me around over 
+                            a month to complete since it's my most polished and well-built yet and due to the difficulty as I previously mentioned. From it, I have learned more 
+                            about using transition animations and gridbox in CSS, while also gaining experience in a more designer-focused mindset as I had to think very hard about 
+                            design choices to use to ensure the project was aesthetically pleasant. I also further improved my HTML structuring, CSS flexbox, and element positioning.                            
+                        </p>
+
+                        <div class="features">
+                            <h3>features</h3>
+                            <ul>
+                                <li>Fully responsive to suit tablet and mobile screens.</li>
+                                <li>Created using Flex-box and Grid-box.</li>
+                                <li>Functional slideshow on individual project page.</li>
+                                <li>Sidebar and burger menu.</li>
+                                <li>Functional contact form with reCAPTCHA anti-spam protection using the Formspree API.</li>
+                                <li>Attractive design.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-tags scrollable">
+                    <div>html</div>
+                    <div>css</div>
+                    <div>javascript</div>
+                </div>
+            </div>
+        </section>
+    </main> 
+</body>
+</html>

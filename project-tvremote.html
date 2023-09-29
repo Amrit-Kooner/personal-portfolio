@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio">
+    <meta name="author" content="Amrit Saab Kooner">
+    <!-- LINK  -->
+    <link rel="shortcut icon" type="image/icon" href="img/icons/smile.svg">
+    <link rel="stylesheet"href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Roboto&display=swap" rel="stylesheet">
+    <!-- SCRIPT -->
+    <script src="script/app.js" defer></script>
+    <script src="https://kit.fontawesome.com/64885c474e.js" defer crossorigin="anonymous"></script>
+    <!-- TITLE -->
+    <title>Portfolio - Voice Control TV-Remote Project</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="sidebar-btn tooltip-element" data-tooltip="SIDEBAR">
+            <img class="sidebar-icon" src="img/icons/chevrons-down.svg" alt="Sidebar Toggle Icon">
+        </button>
+
+        <button class="burger-menu-btn tooltip-element" data-tooltip="BURGER MENU">
+            <img class="burger-icon" src="img/icons/x.svg" alt="Burger Menu Icon">
+        </button>
+    </header>
+
+    <nav class="burger-menu">
+        <ul>
+            <li><a href="index.html#home">home</a></li>
+            <li><a href="index.html#skills">skills</a></li>
+            <li><a href="index.html#projects">projects</a></li>
+            <li><a href="index.html#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <aside class="sidebar">
+        <div class="sidebar-socials">
+            <a class="linkedin-link tooltip-element" data-tooltip="LINKEDIN" href="https://www.linkedin.com/in/amrit-kooner/" target="_blank">
+                <img src="img/icons/linkedin.svg" alt="Linkedin Link">
+            </a>
+            <a class="github-link tooltip-element" data-tooltip="GITHUB" href="https://github.com/Amrit-Kooner" target="_blank">
+                <img src="img/icons/github.svg" alt="GitHub Link">
+            </a>
+            <a class="instagram-link tooltip-element" data-tooltip="INSTAGRAM" href="#" target="_blank">
+                <img src="img/icons/instagram.svg" alt="Instagram Link">
+            </a>
+            <a class="email-link tooltip-element" data-tooltip="EMAIL" href="#" target="_blank">
+                <img src="img/icons/mail.svg" alt="Email Link">
+            </a>
+        </div>
+
+        <span class="sidebar-divider">‎</span>
+
+        <div class="sidebar-logic">
+            <button class="theme-btn tooltip-element" data-tooltip="THEME">
+                <img class="theme-icon" src="img/icons/moon.svg" alt="Theme Toggle Icon">
+            </button>
+            <button class="volume-btn tooltip-element" data-tooltip="VOLUME">
+                <img class="volume-icon" src="img/icons/volume-x.svg" alt="Volume Toggle Icon">
+            </button>
+            <a class="settings-btn tooltip-element" data-tooltip="SETTINGS" href="#">
+                <img src="img/icons/settings.svg" alt="Settings Icon">
+            </a>
+            <a class="top-btn tooltip-element" data-tooltip="BACK TO TOP" href="#home">
+                <img src="img/icons/arrow-up-circle.svg" alt="Back-To-Top Icon">
+            </a>
+        </div>
+    </aside> 
+
+    <main class="main">
+        <section class="solo-project-section">
+            <div class="container">
+                <div class="title-container">
+                    <h1 class="section-title">voice control tv-remote</h1>
+                    <a href="index.html#projects"><i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+       
+                <div class="layout">
+                    <div class="slideshow" data-slider>
+                        <!-- tutorial used: https://www.youtube.com/watch?v=9HcxHDS2w1s&t=740s&ab_channel=WebDevSimplified -->
+                        <ul data-slides>
+                            <li data-active><img src="img/project-imgs/tv-remote/1.JPG" alt="slider image 1"></li>
+                            <li><img src="img/project-imgs/tv-remote/2.JPG" alt="slider image 2"></li>
+                            <li><img src="img/project-imgs/tv-remote/3.JPG" alt="slider image 3"></li>
+                            <li><img src="img/project-imgs/tv-remote/4.JPG" alt="slider image 4"></li>
+                            <li><img src="img/project-imgs/tv-remote/5.JPG" alt="slider image 5"></li>
+                            <li><img src="img/project-imgs/tv-remote/6.JPG" alt="slider image 6"></li>
+                            <li><img src="img/project-imgs/tv-remote/7.JPG" alt="slider image 7"></li>
+                            <li><img src="img/project-imgs/tv-remote/8.JPG" alt="slider image 8"></li>
+                            <li><img src="img/project-imgs/tv-remote/9.JPG" alt="slider image 9"></li>
+                        </ul>
+
+                        <button class="slideshow-btn prev" data-slider-btn="prev"><i class="fa-solid fa-caret-left"></i></button>
+                        <button class="slideshow-btn next" data-slider-btn="next"><i class="fa-solid fa-caret-right"></i></button>
+
+                        <div class="pagination">
+                            <div class="dot active-dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+
+                    <div class="btn-container">
+                        <a href="#" class="btn" target="_blank">demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/Amrit-Kooner/voice-control-tv-remote-with-app" class="btn" target="_blank">github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                    <div class="description">
+                        <div class="creation-date">2/05/23</div>
+                        <p>
+                            This project was created at my University as my final year dissertation for my Individual Honours Project module, where I decided to build a universal voice control TV remote aimed towards legacy TVs without built-in voice 
+                            control functionality. Features include compatibility with all TV models, traditional buttons, and a Bluetooth-connected mobile app. Initially, the voice recognition was meant to be further improved using AI/ML and NLP with 
+                            the NLTK library in Python, but time constraints prevented from this being implemented. The project aims to make voice-controlled technology accessible to those without smart TVs, benefiting people with disabilities and 
+                            improving the TV viewing experience for all, with the goal of simplifying lives. This project was developed using Arduino with C++ and various libraries, including EEPROM to save hex codes in the Arduino ROM for remote 
+                            code storage, IRremote for TV remote code recognition, VoiceRecognitionV3 to map voice commands to IR outputs, and SoftwareSerial for Bluetooth module communication. The app was created using MIT App Inventor as it allows 
+                            easy connectivity to the main device via Bluetooth, enabling it to be controlled from the app to control the TV. MIT app inventor was used as it offers voice recognition with Google Voice To Text which is used to add voice 
+                            control to the app. Overall, this project was very challenging as it involved many concepts I was not familiar with such as C++, Bluetooth technologies, Arduino, and circuit development and design. Also, it had many complex 
+                            features. It took me the entire third year to complete because I had to not only build it but also write a report detailing my development journey and present it. From it, I learned how to program in C++ and develop and design 
+                            Arduino circuits with it.
+                        </p>
+
+                        <div class="features">
+                            <h3>features</h3>
+                            <ul>
+                                <li>The app has a Bluetooth connectivity feature to expand the user base and improve accessibility for TV remote users.</li>
+                                <li>Offers voice control, traditional button control and app control via a app and Bluetooth.</li>
+                                <li>Universal capabilities so its compatible with all TV models. This is done by first trainingthe device with the corresponding IR codes the TV needs to work.</li>
+                                <li>Legacy capabilities so its compatible with legacy non-smart TVs that dont offer voicerecognition or Bluetooth features.</li>
+                                <li>Voice control feature with several voice commands that will work on legacy TVs.</li>
+                            </ul>
+                        </div>
+
+                        <a class="btn" href="doc/VoiceTVReport.pdf" target="_blank">report <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-tags scrollable">
+                    <div>c++</div>
+                    <div>arduino</div>
+                    <div>circuit development and design</div>
+                    <div>voice control</div>
+                    <div>bluetooth technologies</div>
+                    <div>app development</div>
+                    <div>mit app inventor</div>
+                </div>
+            </div>
+        </section>
+    </main> 
+</body>
+</html>

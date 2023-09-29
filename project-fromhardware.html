@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio">
+    <meta name="author" content="Amrit Saab Kooner">
+    <!-- LINK  -->
+    <link rel="shortcut icon" type="image/icon" href="img/icons/smile.svg">
+    <link rel="stylesheet"href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Roboto&display=swap" rel="stylesheet">
+    <!-- SCRIPT -->
+    <script src="script/app.js" defer></script>
+    <script src="https://kit.fontawesome.com/64885c474e.js" defer crossorigin="anonymous"></script>
+    <!-- TITLE -->
+    <title>Portfolio - Frontend E-COM Site Project (Fromhardware)</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="sidebar-btn tooltip-element" data-tooltip="SIDEBAR">
+            <img class="sidebar-icon" src="img/icons/chevrons-down.svg" alt="Sidebar Toggle Icon">
+        </button>
+
+        <button class="burger-menu-btn tooltip-element" data-tooltip="BURGER MENU">
+            <img class="burger-icon" src="img/icons/x.svg" alt="Burger Menu Icon">
+        </button>
+    </header>
+
+    <nav class="burger-menu">
+        <ul>
+            <li><a href="index.html#home">home</a></li>
+            <li><a href="index.html#skills">skills</a></li>
+            <li><a href="index.html#projects">projects</a></li>
+            <li><a href="index.html#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <aside class="sidebar">
+        <div class="sidebar-socials">
+            <a class="linkedin-link tooltip-element" data-tooltip="LINKEDIN" href="https://www.linkedin.com/in/amrit-kooner/" target="_blank">
+                <img src="img/icons/linkedin.svg" alt="Linkedin Link">
+            </a>
+            <a class="github-link tooltip-element" data-tooltip="GITHUB" href="https://github.com/Amrit-Kooner" target="_blank">
+                <img src="img/icons/github.svg" alt="GitHub Link">
+            </a>
+            <a class="instagram-link tooltip-element" data-tooltip="INSTAGRAM" href="#" target="_blank">
+                <img src="img/icons/instagram.svg" alt="Instagram Link">
+            </a>
+            <a class="email-link tooltip-element" data-tooltip="EMAIL" href="#" target="_blank">
+                <img src="img/icons/mail.svg" alt="Email Link">
+            </a>
+        </div>
+
+        <span class="sidebar-divider">‎</span>
+
+        <div class="sidebar-logic">
+            <button class="theme-btn tooltip-element" data-tooltip="THEME">
+                <img class="theme-icon" src="img/icons/moon.svg" alt="Theme Toggle Icon">
+            </button>
+            <button class="volume-btn tooltip-element" data-tooltip="VOLUME">
+                <img class="volume-icon" src="img/icons/volume-x.svg" alt="Volume Toggle Icon">
+            </button>
+            <a class="settings-btn tooltip-element" data-tooltip="SETTINGS" href="#">
+                <img src="img/icons/settings.svg" alt="Settings Icon">
+            </a>
+            <a class="top-btn tooltip-element" data-tooltip="BACK TO TOP" href="#home">
+                <img src="img/icons/arrow-up-circle.svg" alt="Back-To-Top Icon">
+            </a>
+        </div>
+    </aside> 
+
+    <main class="main">
+        <section class="solo-project-section">
+            <div class="container">
+                <div class="title-container">
+                    <h1 class="section-title">frontend e-commerce website (fromhardware)</h1>
+                    <a href="index.html#projects"><i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+       
+                <div class="layout">
+                    <div class="slideshow" data-slider>
+                        <!-- tutorial used: https://www.youtube.com/watch?v=9HcxHDS2w1s&t=740s&ab_channel=WebDevSimplified -->
+                        <ul data-slides>
+                            <li data-active><img src="img/project-imgs/fromhardware-site/1.JPG" alt="slider image 1"></li>
+                            <li><img src="img/project-imgs/fromhardware-site/2.JPG" alt="slider image 2"></li>
+                            <li><img src="img/project-imgs/fromhardware-site/3.JPG" alt="slider image 3"></li>
+                            <li><img src="img/project-imgs/fromhardware-site/4.JPG" alt="slider image 4"></li>
+                            <li><img src="img/project-imgs/fromhardware-site/5.JPG" alt="slider image 5"></li>
+                            <li><img src="img/project-imgs/fromhardware-site/6.JPG" alt="slider image 6"></li>
+                            <li><img src="img/project-imgs/fromhardware-site/7.JPG" alt="slider image 7"></li>
+                            <li><img src="img/project-imgs/fromhardware-site/8.JPG" alt="slider image 8"></li>
+                            <li><img src="img/project-imgs/fromhardware-site/9.JPG" alt="slider image 9"></li>
+                            <li><img src="img/project-imgs/fromhardware-site/10.JPG" alt="slider image 10"></li>
+                            <li><img src="img/project-imgs/fromhardware-site/11.JPG" alt="slider image 11"></li>
+                            <li><img src="img/project-imgs/fromhardware-site/12.JPG" alt="slider image 12"></li>
+                            <li><img src="img/project-imgs/fromhardware-site/13.JPG" alt="slider image 13"></li>
+                        </ul>
+
+                        <button class="slideshow-btn prev" data-slider-btn="prev"><i class="fa-solid fa-caret-left"></i></button>
+                        <button class="slideshow-btn next" data-slider-btn="next"><i class="fa-solid fa-caret-right"></i></button>
+
+                        <div class="pagination">
+                            <div class="dot active-dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+
+                    <div class="btn-container">
+                        <a href="#" class="btn" target="_blank">demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/Amrit-Kooner/fromhardware-ecommerce-gaming-site" class="btn" target="_blank">github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                    <div class="description">
+                        <div class="creation-date">28/06/23</div>
+                        <p>
+                            This project was inspired by another project I created at my University for my Database and Web Application Development module, 
+                            which was also a gaming e-commerce website called Fromhardware. However, that was a full CRUD full-stack project which utilized a 
+                            backend server powered by XAMPP, SQL, and PHP, to store, edit, delete, create, read, and manage various objects, such as video games that were displayed on the webpage. 
+                            I decided not to include that project as it contained messy, spaghetti code and it utilized Bootstrap which I dislike. 
+                            This current project is purely frontend in nature since I have not actively used XAMPP, PHP, and SQL for some time. 
+                            It is the first web-related project in over a year and the first that utilizes JavaScript and heavy CSS flexboxes. 
+                            Overall, it was fairly simple to build and more of a quick refresher of the skills I have forgotten in the past, 
+                            it took me between 2 and 3 weeks to complete as it was built alongside my Google Clone project From it, I improved my JavaScript DOM manipulation, 
+                            and HTML structuring, as well as my CSS flexbox and element positioning.                            
+                        </p>
+
+                        <div class="features">
+                            <h3>features</h3>
+                            <ul>
+                                <li>Fully responsive to suit tablet and mobile screens.</li>
+                                <li>Created using Flex-box.</li>
+                                <li>Utilizes many background videos.</li>
+                                <li>Functional drop-down navigation menu.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-tags scrollable">
+                    <div>html</div>
+                    <div>css</div>
+                    <div>javascript</div>
+                </div>
+            </div>
+        </section>
+    </main> 
+</body>
+</html>

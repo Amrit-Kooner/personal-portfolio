@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio">
+    <meta name="author" content="Amrit Saab Kooner">
+    <!-- LINK  -->
+    <link rel="shortcut icon" type="image/icon" href="img/icons/smile.svg">
+    <link rel="stylesheet"href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Roboto&display=swap" rel="stylesheet">
+    <!-- SCRIPT -->
+    <script src="script/app.js" defer></script>
+    <script src="https://kit.fontawesome.com/64885c474e.js" defer crossorigin="anonymous"></script>
+    <!-- TITLE -->
+    <title>Portfolio - Hangman Game</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="sidebar-btn tooltip-element" data-tooltip="SIDEBAR">
+            <img class="sidebar-icon" src="img/icons/chevrons-down.svg" alt="Sidebar Toggle Icon">
+        </button>
+
+        <button class="burger-menu-btn tooltip-element" data-tooltip="BURGER MENU">
+            <img class="burger-icon" src="img/icons/x.svg" alt="Burger Menu Icon">
+        </button>
+    </header>
+
+    <nav class="burger-menu">
+        <ul>
+            <li><a href="index.html#home">home</a></li>
+            <li><a href="index.html#skills">skills</a></li>
+            <li><a href="index.html#projects">projects</a></li>
+            <li><a href="index.html#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <aside class="sidebar">
+        <div class="sidebar-socials">
+            <a class="linkedin-link tooltip-element" data-tooltip="LINKEDIN" href="https://www.linkedin.com/in/amrit-kooner/" target="_blank">
+                <img src="img/icons/linkedin.svg" alt="Linkedin Link">
+            </a>
+            <a class="github-link tooltip-element" data-tooltip="GITHUB" href="https://github.com/Amrit-Kooner" target="_blank">
+                <img src="img/icons/github.svg" alt="GitHub Link">
+            </a>
+            <a class="instagram-link tooltip-element" data-tooltip="INSTAGRAM" href="#" target="_blank">
+                <img src="img/icons/instagram.svg" alt="Instagram Link">
+            </a>
+            <a class="email-link tooltip-element" data-tooltip="EMAIL" href="#" target="_blank">
+                <img src="img/icons/mail.svg" alt="Email Link">
+            </a>
+        </div>
+
+        <span class="sidebar-divider">‎</span>
+
+        <div class="sidebar-logic">
+            <button class="theme-btn tooltip-element" data-tooltip="THEME">
+                <img class="theme-icon" src="img/icons/moon.svg" alt="Theme Toggle Icon">
+            </button>
+            <button class="volume-btn tooltip-element" data-tooltip="VOLUME">
+                <img class="volume-icon" src="img/icons/volume-x.svg" alt="Volume Toggle Icon">
+            </button>
+            <a class="settings-btn tooltip-element" data-tooltip="SETTINGS" href="#">
+                <img src="img/icons/settings.svg" alt="Settings Icon">
+            </a>
+            <a class="top-btn tooltip-element" data-tooltip="BACK TO TOP" href="#home">
+                <img src="img/icons/arrow-up-circle.svg" alt="Back-To-Top Icon">
+            </a>
+        </div>
+    </aside> 
+
+    <main class="main">
+        <section class="solo-project-section">
+            <div class="container">
+                <div class="title-container">
+                    <h1 class="section-title">hangman game</h1>
+                    <a href="index.html#projects"><i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+       
+                <div class="layout">
+                    <div class="slideshow" data-slider>
+                        <!-- tutorial used: https://www.youtube.com/watch?v=9HcxHDS2w1s&t=740s&ab_channel=WebDevSimplified -->
+                        <ul data-slides>
+                            <li data-active><img src="img/project-imgs/hangman/1.JPG" alt="slider image 1"></li>
+                            <li><img src="img/project-imgs/hangman/2.JPG" alt="slider image 2"></li>
+                            <li><img src="img/project-imgs/hangman/3.JPG" alt="slider image 3"></li>
+                            <li><img src="img/project-imgs/hangman/4.JPG" alt="slider image 4"></li>
+                            <li><img src="img/project-imgs/hangman/5.JPG" alt="slider image 5"></li>
+                            <li><img src="img/project-imgs/hangman/6.JPG" alt="slider image 6"></li>
+                            <li><img src="img/project-imgs/hangman/7.JPG" alt="slider image 7"></li>
+                            <li><img src="img/project-imgs/hangman/8.JPG" alt="slider image 8"></li>
+                        </ul>
+
+                        <button class="slideshow-btn prev" data-slider-btn="prev"><i class="fa-solid fa-caret-left"></i></button>
+                        <button class="slideshow-btn next" data-slider-btn="next"><i class="fa-solid fa-caret-right"></i></button>
+
+                        <div class="pagination">
+                            <div class="dot active-dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+
+                    <div class="btn-container">
+                        <a href="#" class="btn" target="_blank">demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/Amrit-Kooner/hangman-game" class="btn" target="_blank">github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                    <div class="description">
+                        <div class="creation-date">06/09/23</div>
+                        <p>
+                            This project was initially built in Python several years ago when I was learning the language, and it was played through the terminal. 
+                            Recently, I decided to recreate it from scratch blindly using JavaScript, HTML, and CSS as it would be more interactive and an overall better project. 
+                            It also gave me the chance to my understanding of DOM manipulation and general JavaScript. I didn’t focus on CSS on this project, it was mainly to test and improve 
+                            my DOM manipulation skills.
+                            Overall, the project proved to be quite challenging with it taking me a week and a half, mainly due to recurring issues such as double confirmation pop-up notifications, 
+                            where users had to confirm their actions twice, and also because I have not programmed in OOP in a few months with the last time in Java so it took me time to get used 
+                            to its syntax. From it, I gained a better understanding of OOP and DOM manipulation in JavaScript.                            
+                        </p>
+
+                        <div class="features">
+                            <h3>features</h3>
+                            <ul>
+                                <li>Fully functional Hangman game with over 1,000 possible words to guess.</li>
+                                <li>Created used Object Orineted Programming with JavaScript.</li>
+                                <li>Players can reset and quit the game.</li>
+                                <li>Utilized popup confim and alert boxes to inform the player.</li>
+                                <li>Checks user input to see if its valid as numbers, symbols and white spaces are not allowed.</li>
+                                <li>Each word has an amount of guesses based on its length to make the game more fair.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-tags scrollable">
+                    <div>html</div>
+                    <div>css</div>
+                    <div>javascript</div>
+                </div>
+            </div>
+        </section>
+    </main> 
+</body>
+</html>
