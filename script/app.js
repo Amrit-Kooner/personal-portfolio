@@ -29,7 +29,7 @@ const burgerMenuLogic = function() {
     const menuIcon = document.querySelector(".burger-icon")
     //
     const menuSource1 = "img/icons/menu.svg"
-    const menuSource2 = "img/icons/menu.svg"
+    const menuSource2 = "img/icons/x.svg"
 
     // loads current state in local storage
     loadStorage(menuIcon, menu, menuSource1, "burgerMenuState")

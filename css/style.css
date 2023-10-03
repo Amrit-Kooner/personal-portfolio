@@ -15,27 +15,36 @@ https://formspree.io/ */
     --clr-grey-1: #404040;
 
     --clr-text-main: #A9A9A9; 
-    --clr-white-1: #EDEDED;
-    --clr-white-2: #F4F4F4; 
+    --clr-text-1: #EDEDED;
+    --clr-text-2: #F4F4F4; 
 
     --clr-accent: #DA0037;
 }
+
 body.state{
-
      /* light-mode colour scheme */
-     /* --clr-main-1:##; */
-     /* --clr-main-2: #A9A9A9;
-     --clr-main-3: #1E1E1E; 
-     --clr-main-4: #8A8A8A; 
+     --clr-grey-1: #F7F7F7;
+     --clr-main-1: #E5E5E5;
+     --clr-main-4: #C1C1C1;
+     --clr-main-3: #9D9D9D;
+     --clr-main-2: #6A6A6A; 
+     --clr-main-5: #797979;
 
-     --clr-main-5: #ACACAC; 
-     --clr-grey-1: #8A8A8A;  */
-     
-     --clr-text-main: #0C0C0C; 
-     --clr-white-1: #222222; 
-     --clr-white-2: #444444; 
+     --clr-text-main: #000; 
+     --clr-text-1: #080808; 
+     --clr-text-2: #F4F4F4; 
 
-    --clr-accent: #0039DA;  
+    --clr-accent: #0046FF;  
+}
+body.state .skills-section .card{
+    --clr-main-3: #1E1E1E;
+}
+body.state .tooltip-element::after,
+body.state .tooltip-element::before{
+    --clr-main-1: #000000;
+}
+body.state .contact-wrapper .form-input{
+    --clr-text-1: #EDEDED;
 }
 
 *, *::after, *::before{
@@ -53,7 +62,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
-    color: var(--clr-white-1);
+    color: var(--clr-text-1);
     scrollbar-width: auto;
     min-height: 100vh;
 }
@@ -64,7 +73,7 @@ body::-webkit-scrollbar{
 .project-tags::-webkit-scrollbar-track,
 .contact-wrapper .form-textarea::-webkit-scrollbar-track,
 body::-webkit-scrollbar-track{
-    background-color: var(--clr-white-1);
+    background-color: var(--clr-text-1);
 }
 .project-tags::-webkit-scrollbar-thumb,
 .contact-wrapper .form-textarea::-webkit-scrollbar-thumb,
@@ -84,7 +93,7 @@ body::-webkit-scrollbar-thumb{
 /* for firefox */
 body,
 .scrollable{
-    scrollbar-color: var(--clr-accent) var(--clr-white-1);
+    scrollbar-color: var(--clr-accent) var(--clr-text-1);
 }
 
 .tooltip-element::after,
@@ -92,7 +101,7 @@ body,
     position: fixed;
     background-color: rgba(237, 237, 237, 0.5);
     border: 1px solid var(--clr-accent); 
-    font-size: 12px;
+    font-size: 1.2rem;
     white-space: nowrap;
     line-height: 1;
     padding: 0.5rem 1rem;
@@ -235,7 +244,7 @@ body,
 .burger-menu a{
     display: block;
     text-decoration: none;
-    color: var(--clr-white-1);
+    color: var(--clr-text-1);
     padding: 1.25rem 0;
     position: relative;
     /* font-size: 12px;   */
@@ -508,7 +517,7 @@ body,
 /* .progress-wrapper progress::after{
     content: attr(value);
     position: absolute;
-    color: var(--clr-white-2);
+    color: var(--clr-text-2);
     font-weight: bold;
     font-size: 1.6rem;
 } */
@@ -581,7 +590,7 @@ body,
     padding: 1.2rem 1.2rem;
     white-space: nowrap;
     text-decoration: none;
-    color: initial;
+    color: var(--clr-main-1);
 }
 
 .project-tags{
@@ -633,7 +642,7 @@ body,
 }
 
 .title-container a{
-    background-color: var(--clr-white-2);
+    background-color: var(--clr-text-2);
     padding: 1rem 1.3rem;
     line-height: 0;
     border-radius: 50rem;
@@ -700,7 +709,7 @@ body,
 
 .slideshow .slideshow-btn:hover{
     background-color: rgb(0, 0, 0, 0.25);
-    color: var(--clr-white-2);
+    color: var(--clr-text-2);
 }
 
 .slideshow .next{
@@ -761,7 +770,7 @@ body,
 .description .features h3{
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: var(--clr-white-1);
+    color: var(--clr-text-1);
     margin-bottom: 1rem;
 }
 
@@ -798,7 +807,7 @@ body,
 .contact-wrapper .form-input{
     margin-bottom: 2.5rem;
     padding: 1.5rem;
-    background-color: var(--clr-white-1); 
+    background-color: var(--clr-text-1); 
     border: 1px solid var(--clr-main-3); 
     font-size: 1.4rem;
     box-shadow:  var(--shdw-component);
@@ -833,7 +842,7 @@ body,
 
 .contact-wrapper .form-input:focus{
     outline: 3px solid var(--clr-accent);
-    background-color: var(--clr-white-2);
+    background-color: var(--clr-text-2);
 }
 
 .contact-wrapper .form-input::placeholder{
@@ -862,7 +871,7 @@ body,
 
 .footer-navigation a:hover{
     text-decoration: underline;
-    text-decoration-color: var(--clr-white-1);
+    text-decoration-color: var(--clr-text-1);
     text-underline-offset: 6px;
 }
 
@@ -894,7 +903,7 @@ body,
 
 .copyright{
     font-size: 1.2rem;
-    background: var(--clr-white-1);
+    background: var(--clr-text-1);
     text-align: center;
     text-transform: capitalize;
     padding: 0.8rem 0;
@@ -991,7 +1000,6 @@ body,
 
 
 /* PROJECT SECTION */
-
 @media only screen and (max-width: 700px){
     .projects-container{
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
