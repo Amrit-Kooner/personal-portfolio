@@ -59,8 +59,8 @@ const sidebarLogic = function(){
     //
     const sidebarSource1 = "img/icons/chevrons-up.svg"
     const sidebarSource2 = "img/icons/chevrons-down.svg"
-    const themeSource1 = "img/icons/sun.svg"
-    const themeSource2 = "img/icons/moon.svg"
+    const themeSource1 = "img/icons/moon.svg"
+    const themeSource2 = "img/icons/sun.svg"
     const volumeSource1 = "img/icons/volume-2.svg"
     const volumeSource2 = "img/icons/volume-x.svg"
 
@@ -77,7 +77,6 @@ const sidebarLogic = function(){
         updateStorage(sidebar, "sidebarState")
     })
 
-
     themeBtn.addEventListener("click", () => {
         //update icon state
         btnToggle(themeIcon, mainBody, themeSource1, themeSource2)
@@ -85,7 +84,6 @@ const sidebarLogic = function(){
         //update state in local storage
         updateStorage(mainBody, "themeState")
     })
-
 
     volumeBtn.addEventListener("click", () => {
         //update icon state

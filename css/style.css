@@ -65,6 +65,7 @@ body{
     color: var(--clr-text-1);
     scrollbar-width: auto;
     min-height: 100vh;
+    background-color: var(--clr-main-5);
 }
 
 body::-webkit-scrollbar{
