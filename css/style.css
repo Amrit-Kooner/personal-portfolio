@@ -56,7 +56,6 @@ body.state .contact-wrapper .form-input{
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
-    height: 100vh;
 }
 
 body{
@@ -65,8 +64,7 @@ body{
     line-height: 1.5;
     color: var(--clr-text-1);
     scrollbar-width: auto;
-    height: 100dvh;
-    background-color: var(--clr-main-5);
+    min-height: 100vh;
 }
 
 body::-webkit-scrollbar{
@@ -626,6 +624,7 @@ body,
 .solo-project-section{
     background-color: var(--clr-main-5); 
     padding-block: 10rem;
+    min-height: 100vh;
 }
 
 .title-container{
