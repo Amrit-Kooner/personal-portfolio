@@ -1,17 +1,24 @@
+// Resets form after submit
+// https://help.formspree.io/hc/en-us/articles/1500009404742-How-to-clear-a-form-after-submission
+window.onbeforeunload = () => {
+    for(const form of document.getElementsByClassName('contact-form')) {
+      form.reset();
+    }
+}
+
+
 // changes icon state based on toggle
 const btnToggle = (icon, component, source1, source2) => {
     component.classList.toggle("state")
     icon.src = component.classList.contains("state") ? source1 : source2
 }
 
-
 // saves state of toggle
-const updateStorage = (component, state) =>{
+const updateStorage = (component, state) => {
     component.classList.contains("state") 
     ? localStorage.setItem(state, "state") 
     : localStorage.removeItem(state)
 }
-
 
 // loads saved state of toggle
 const loadStorage = (icon, component, source, item) => {
@@ -42,7 +49,6 @@ const burgerMenuLogic = function() {
         updateStorage(menu, "burgerMenuState")
     })
 }
-
 
 // sidebar logic
 const sidebarLogic = function(){
@@ -94,7 +100,6 @@ const sidebarLogic = function(){
         // updateState(volumeBtn, "volumeState")
     })
 }
-
 
 // slideshow logic
 const slideshowLogic = function(){
