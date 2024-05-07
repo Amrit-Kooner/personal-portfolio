@@ -1,735 +1,1123 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- META -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Personal Portfolio">
-        <meta name="author" content="Amrit Saab Kooner">
-        <!-- LINKS  -->
-        <link rel="shortcut icon" type="image/icon" href="img/icons/smile.svg">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Roboto&display=swap" rel="stylesheet">
-        <!-- SCRIPTS -->
-        <script src="script/app.js" defer></script>
-        <script src="https://kit.fontawesome.com/64885c474e.js" defer crossorigin="anonymous"></script>
-        <!-- TITLE -->
-        <title>Portfolio - Amrit Kooner</title>
-    </head>
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal Portfolio" />
+    <meta name="author" content="Amrit Saab Kooner" />
+    <!-- LINKS  -->
+    <link rel="shortcut icon" type="image/icon" href="img/icons/smile.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SCRIPTS -->
+    <script src="script/app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/64885c474e.js"
+      defer
+      crossorigin="anonymous"
+    ></script>
+    <!-- TITLE -->
+    <title>Portfolio - Amrit Kooner</title>
+  </head>
 
-    <body>
-        <header class="header">
-            <button class="sidebar-btn tooltip-element" data-tooltip="SIDEBAR">
-                <img class="sidebar-icon" src="img/icons/chevrons-down.svg" alt="Sidebar Toggle Icon">
-            </button>
+  <body>
+    <header class="header">
+      <button class="sidebar-btn tooltip-element" data-tooltip="SIDEBAR">
+        <img
+          class="sidebar-icon"
+          src="img/icons/chevrons-down.svg"
+          alt="Sidebar Toggle Icon"
+        />
+      </button>
 
-            <button class="burger-menu-btn tooltip-element" data-tooltip="BURGER MENU">
-                <img class="burger-icon" src="img/icons/x.svg" alt="Burger Menu Icon">
-            </button>
-        </header>
+      <button
+        class="burger-menu-btn tooltip-element"
+        data-tooltip="BURGER MENU"
+      >
+        <img class="burger-icon" src="img/icons/x.svg" alt="Burger Menu Icon" />
+      </button>
+    </header>
 
-        <nav class="burger-menu">
+    <nav class="burger-menu">
+      <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+
+    <aside class="sidebar scrollable">
+      <div class="sidebar-socials">
+        <a
+          class="tooltip-element"
+          data-tooltip="LINKEDIN"
+          href="https://www.linkedin.com/in/amrit-kooner/"
+          target="_blank"
+        >
+          <img src="img/icons/linkedin.svg" alt="Linkedin Link" />
+        </a>
+        <a
+          class="tooltip-element"
+          data-tooltip="GITHUB"
+          href="https://github.com/Amrit-Kooner"
+          target="_blank"
+        >
+          <img src="img/icons/github.svg" alt="GitHub Link" />
+        </a>
+        <a
+          class="tooltip-element"
+          data-tooltip="INSTAGRAM"
+          href="https://www.instagram.com/amritkooner47/"
+          target="_blank"
+        >
+          <img src="img/icons/instagram.svg" alt="Instagram Link" />
+        </a>
+        <a
+          class="tooltip-element"
+          data-tooltip="EMAIL"
+          href="mailto:amritkooner47@gmail.com"
+          target="_blank"
+        >
+          <img src="img/icons/mail.svg" alt="Email Link" />
+        </a>
+      </div>
+
+      <span class="sidebar-divider">‎</span>
+
+      <div class="sidebar-logic">
+        <button class="theme-btn tooltip-element" data-tooltip="THEME">
+          <img
+            class="theme-icon"
+            src="img/icons/sun.svg"
+            alt="Theme Toggle Icon"
+          />
+        </button>
+        <button class="volume-btn tooltip-element" data-tooltip="VOLUME">
+          <img
+            class="volume-icon"
+            src="img/icons/volume-x.svg"
+            alt="Volume Toggle Icon"
+          />
+        </button>
+        <a class="tooltip-element" data-tooltip="SETTINGS" href="#">
+          <img src="img/icons/settings.svg" alt="Settings Icon" />
+        </a>
+        <a class="tooltip-element" data-tooltip="BACK TO TOP" href="#home">
+          <img src="img/icons/arrow-up-circle.svg" alt="Back-To-Top Icon" />
+        </a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="about-section" id="home">
+        <div class="container">
+          <div class="about-img">
+            <img class="#" src="img/me.jpg" alt="me!" />
+          </div>
+
+          <div class="about-text">
+            <h1>hello i'm, <span>amrit kooner.</span> 👋🏽</h1>
+            <p>
+              First-Class Computer Science graduate from Birmingham City
+              University. Inspiring to become a Front-end Developer / Software
+              Engineer. Eager to learn and is unafraid of challenges.
+            </p>
+            <a class="about-btn btn" href="doc/CV.pdf" target="_blank"
+              >preview cv <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section" id="skills">
+        <div class="container">
+          <h1 class="section-title">skills</h1>
+          <div class="skill-wrapper">
+            <div class="title-wrapper">
+              <h3>current</h3>
+              <span class="skill-divider"></span>
+            </div>
+            <div class="skill-cards">
+              <div class="card">
+                <img src="img/icons/html.svg" alt="html icon" />
+                <span>html</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/css.svg" alt="css icon" />
+                <span>css</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/js.svg" alt="js icon" />
+                <span>javascript</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/python.svg" alt="python icon" />
+                <span>python</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/cli.svg" alt="cli icon" />
+                <span>bash cli</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/git.svg" alt="git icon" />
+                <span>git</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/github2.svg" alt="github icon" />
+                <span>github</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/postman.svg" alt="postman icon" />
+                <span>postman</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/figma.svg" alt="figma icon" />
+                <span>figma</span>
+              </div>
+            </div>
+            <p class="skill-category-desc">
+              - Skills I currently possess and actively use productively, but
+              still have many areas to improve.
+            </p>
+          </div>
+
+          <div class="skill-wrapper">
+            <div class="title-wrapper">
+              <h3>learning</h3>
+              <span class="skill-divider"></span>
+            </div>
+            <div class="skill-cards">
+              <div class="card">
+                <img src="img/icons/react.svg" alt="react icon" />
+                <span>react.js</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/redux.svg" alt="redux icon" />
+                <span>redux.js</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/tailwind.svg" alt="tailwind icon" />
+                <span>tailwind</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/typescript.svg" alt="typescript icon" />
+                <span>typescript</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/reactquery.svg" alt="reactquery icon" />
+                <span>react query</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/axios.svg" alt="axios icon" />
+                <span>axios</span>
+              </div>
+            </div>
+            <p class="skill-category-desc">
+              - Skills I am currently learning and building new projects with.
+            </p>
+          </div>
+
+          <div class="skill-wrapper">
+            <div class="title-wrapper">
+              <h3>interests</h3>
+              <span class="skill-divider"></span>
+            </div>
+            <div class="skill-cards">
+              <div class="card">
+                <img src="img/icons/lodash.svg" alt="lodash icon" />
+                <span>lodash</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/jest.svg" alt="jest icon" />
+                <span>jest</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/moncha.svg" alt="moncha icon" />
+                <span>moncha</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/jasmine.svg" alt="jasmine icon" />
+                <span>jasmine</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/gatsby.svg" alt="gatsby icon" />
+                <span>gatsby</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/sql.svg" alt="sql icon" />
+                <span>sql</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/php.svg" alt="php icon" />
+                <span>php</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/node.svg" alt="node icon" />
+                <span>node.js</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/next.svg" alt="next icon" />
+                <span>next.js</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/vue.svg" alt="vue icon" />
+                <span>vue.js</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/express.svg" alt="express icon" />
+                <span>express.js</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/mongodb.svg" alt="mongodb icon" />
+                <span>mongodb</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/django.svg" alt="django icon" />
+                <span>django</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/bun.svg" alt="bun icon" />
+                <span>bun.js</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/materialui.svg" alt="materialui icon" />
+                <span>material ui</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/web3.svg" alt="web3 icon" />
+                <span>web3.js</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/docker.svg" alt="docker icon" />
+                <span>docker</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/aws.svg" alt="aws icon" />
+                <span>AWS</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/shopify.svg" alt="aws icon" />
+                <span>shopify</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/blockchain.svg" alt="blockchain icon" />
+                <span>blockchain</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/solidity.svg" alt="solidity icon" />
+                <span>solidity</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/photoshop.svg" alt="photoshop icon" />
+                <span>photoshop</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/wordpress.svg" alt="wordpress icon" />
+                <span>wordpress</span>
+              </div>
+            </div>
+            <p class="skill-category-desc">
+              - Skills I am interested in learning within the near future to
+              increase my knowledge and tech stack in the field.
+            </p>
+          </div>
+
+          <div class="skill-wrapper">
+            <div class="title-wrapper">
+              <h3>rusty</h3>
+              <span class="skill-divider"></span>
+            </div>
+            <div class="skill-cards">
+              <div class="card">
+                <img src="img/icons/unity.svg" alt="unity icon" />
+                <span>unity</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/pandas.svg" alt="pandas icon" />
+                <span>pandas</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/numpy.svg" alt="numpy icon" />
+                <span>numpy</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/matplotlib.svg" alt="matplotlib icon" />
+                <span>matplotlib </span>
+              </div>
+              <div class="card">
+                <img src="img/icons/seaborn.svg" alt="seaborn icon" />
+                <span>seaborn</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/c.svg" alt="c# icon" />
+                <span>c#</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/csharp.svg" alt="c++ icon" />
+                <span>c++</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/php.svg" alt="php icon" />
+                <span>php</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/sql.svg" alt="sql icon" />
+                <span>sql</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/java.svg" alt="java icon" />
+                <span>java</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/django.svg" alt="django icon" />
+                <span>django</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/firebase.svg" alt="firebase icon" />
+                <span>firebase</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/xampp.svg" alt="xampp icon" />
+                <span>xampp</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/adobexd.svg" alt="adobe xd icon" />
+                <span>adobe xd</span>
+              </div>
+              <div class="card">
+                <img src="img/icons/arduino.svg" alt="arduino icon" />
+                <span>arduino</span>
+              </div>
+            </div>
+            <p class="skill-category-desc">
+              - Skills I once knew and worked with in the past but mostly to
+              medianly forgotten due to lack of practice and use, however these
+              can be quickly relearnt if required as I once knew them.
+            </p>
+          </div>
+
+          <!-- progress bars -->
+          <div class="skill-progression-bars">
+            <div class="skill-progress">
+              <div class="card">
+                <img src="img/icons/html.svg" alt="html icon" />
+                <span>html</span>
+              </div>
+              <div class="progress-wrapper">
+                <div>
+                  <span>0</span>
+                  <span>5</span>
+                  <span>10</span>
+                </div>
+                <progress max="10" value="7"></progress>
+              </div>
+            </div>
+
+            <div class="skill-progress">
+              <div class="card">
+                <img src="img/icons/css.svg" alt="css icon" />
+                <span>css</span>
+              </div>
+              <div class="progress-wrapper">
+                <div>
+                  <span>0</span>
+                  <span>5</span>
+                  <span>10</span>
+                </div>
+                <progress max="10" value="5"></progress>
+              </div>
+            </div>
+
+            <div class="skill-progress">
+              <div class="card">
+                <img src="img/icons/js.svg" alt="js icon" />
+                <span>javascript</span>
+              </div>
+              <div class="progress-wrapper">
+                <div>
+                  <span>0</span>
+                  <span>5</span>
+                  <span>10</span>
+                </div>
+                <progress max="10" value="4"></progress>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects">
+        <div class="container">
+          <h1 class="section-title">projects</h1>
+          <div class="projects-container">
+            <div class="project">
+              <a href="project-google.html">
+                <div class="project-img-wrapper">
+                  <img
+                    src="img/project-imgs/google-clone/1.JPG"
+                    alt="google clone img"
+                  />
+                </div>
+                <h3>frontend google clone</h3>
+                <span class="project-divider"></span>
+                <p>
+                  This project was my first attempt at cloning a website and I
+                  chose Google specifically as it seemed simple to clone because
+                  I wanted a small project to do over the weekend. However, I
+                  quickly realized that I had underestimated this project, as it
+                  had many complex components such as the recommended drop-down
+                  search results, as well as the search-by-image and
+                  search-by-voice features. The hardest part was the recommended
+                  drop-down search results as it required a lot of JavaScript
+                  which I wasn’t so comfortable using at the time. Annoyingly, a
+                  couple of days after I finished the project the actual Google
+                  website was visually updated being the Google apps and Google
+                  account drop-down sections. Overall it gave me quite a
+                  challenge and it took me around 3 weeks to complete because it
+                  had many complex components as previously mentioned and it was
+                  created alongside my Fromhardware e-commerce project. From it,
+                  I improved my JavaScript DOM manipulation, and HTML
+                  structuring, as well as my CSS flexbox and element
+                  positioning.
+                </p>
+              </a>
+              <span class="project-divider"></span>
+              <div class="btn-container">
+                <a
+                  href="https://amrit-kooner.github.io/frontend-google-clone/"
+                  class="btn"
+                  target="_blank"
+                  >demo <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a
+                  href="https://github.com/Amrit-Kooner/frontend-google-clone"
+                  class="btn"
+                  target="_blank"
+                  >github <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a href="project-google.html" class="btn">learn more</a>
+              </div>
+              <span class="project-divider"></span>
+              <div class="project-tags scrollable">
+                <div>html</div>
+                <div>css</div>
+                <div>javascript</div>
+              </div>
+            </div>
+
+            <div class="project">
+              <a href="project-fromhardware.html">
+                <div class="project-img-wrapper">
+                  <img
+                    src="img/project-imgs/fromhardware-site/1.JPG"
+                    alt="e-commerce site img"
+                  />
+                </div>
+                <h3>frontend e-commmerce site</h3>
+                <span class="project-divider"></span>
+                <p>
+                  This project was inspired by another project I created at my
+                  University for my Database and Web Application Development
+                  module, which was also a gaming e-commerce website called
+                  Fromhardware. However, that was a full CRUD full-stack project
+                  which utilized a backend server powered by XAMPP, SQL, and
+                  PHP, to store, edit, delete, create, read, and manage various
+                  objects, such as video games that were displayed on the
+                  webpage. I decided not to include that project as it contained
+                  messy, spaghetti code and it utilized Bootstrap which I
+                  dislike. This current project is purely frontend in nature
+                  since I have not actively used XAMPP, PHP, and SQL for some
+                  time. It is the first web-related project in over a year and
+                  the first that utilizes JavaScript and heavy CSS flexboxes.
+                  Overall, it was fairly simple to build and more of a quick
+                  refresher of the skills I have forgotten in the past, it took
+                  me between 2 and 3 weeks to complete as it was built alongside
+                  my Google Clone project From it, I improved my JavaScript DOM
+                  manipulation, and HTML structuring, as well as my CSS flexbox
+                  and element positioning.
+                </p>
+              </a>
+              <span class="project-divider"></span>
+              <div class="btn-container">
+                <a
+                  href="https://amrit-kooner.github.io/fromhardware-ecommerce-gaming-site/"
+                  class="btn"
+                  target="_blank"
+                  >demo <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a
+                  href="https://github.com/Amrit-Kooner/fromhardware-ecommerce-gaming-site"
+                  class="btn"
+                  target="_blank"
+                  >github <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a href="project-fromhardware.html" class="btn">learn more</a>
+              </div>
+              <span class="project-divider"></span>
+              <div class="project-tags scrollable">
+                <div>html</div>
+                <div>css</div>
+                <div>javascript</div>
+              </div>
+            </div>
+
+            <div class="project">
+              <a href="project-portfolio.html">
+                <div class="project-img-wrapper">
+                  <img
+                    src="img/project-imgs/portfolio/1.JPG"
+                    alt="portfolio img"
+                  />
+                </div>
+                <h3>personal portfolio site</h3>
+                <span class="project-divider"></span>
+                <p>
+                  This project is my personal proudest and most well-built in
+                  terms of UI design and code, as it's very clean using best
+                  practices in HTML, CSS, and JavaScript. A lot of time and care
+                  was put into this project as it's my most important one since
+                  it’s a portfolio, it will be my first project that potential
+                  employers see. And because of this, I wanted to make it more
+                  personalized and unique to make it stand out more. So I
+                  incorporated many features, such as a sidebar menu having
+                  utility buttons like a mute and settings button. It has a mute
+                  button as it was intended to have sound effects with
+                  interactable, and a settings page where the user can
+                  personalize and alter the color of the website. However, the
+                  logic for the mute and settings buttons hasn’t yet been
+                  implemented due to time constants. It was my first project
+                  have utilized transition animations which were used on the
+                  burger menu and sidebar, and my first that used CSS grid-box
+                  which was used on the projects and skills page. Overall, it
+                  was a very difficult and stress-worthy project as I don’t see
+                  myself as a good designer even though the design here is very
+                  aesthetic, it took me a while to think of these design
+                  choices. Also, since it had many complex components and logic,
+                  such as the sidebar and burger menu incorporated with
+                  JavaScript for toggling their status and loading/saving their
+                  state in the user’s local storage. This project took me around
+                  over a month to complete since it's my most polished and
+                  well-built yet and due to the difficulty as I previously
+                  mentioned. From it, I have learned more about using transition
+                  animations and gridbox in CSS, while also gaining experience
+                  in a more designer-focused mindset as I had to think very hard
+                  about design choices to use to ensure the project was
+                  aesthetically pleasant. I also further improved my HTML
+                  structuring, CSS flexbox, and element positioning.
+                </p>
+              </a>
+              <span class="project-divider"></span>
+              <div class="btn-container">
+                <a
+                  href="https://github.com/Amrit-Kooner/personal-portfolio"
+                  class="btn"
+                  target="_blank"
+                  >github <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a href="project-portfolio.html" class="btn">learn more</a>
+              </div>
+              <span class="project-divider"></span>
+              <div class="project-tags scrollable">
+                <div>html</div>
+                <div>css</div>
+                <div>javascript</div>
+              </div>
+            </div>
+
+            <div class="project">
+              <a href="project-logreg.html">
+                <div class="project-img-wrapper">
+                  <img
+                    src="img/project-imgs/logistic-regression/3.JPG"
+                    alt="ai algorithm img"
+                  />
+                </div>
+                <h3>logistic regression algo</h3>
+                <span class="project-divider"></span>
+                <p>
+                  This project was created at my University for my Artificial
+                  Intelligence and Machine Learning module, where I collaborated
+                  with a team of four members to create supervised machine
+                  learning algorithms for predicting spectral classes based on a
+                  given dataset. Each team member was responsible for developing
+                  a distinct algorithm model suited to our dataset. I chose to
+                  implement a logistic regression algorithm for this purpose. We
+                  used Python, along with libraries such as Scikit-learn for
+                  machine learning, Pandas for data manipulation, and
+                  Seaborn/Matplotlib for data visualization. Our dataset
+                  comprised 17 features and 100,000 observations, representing
+                  real-world data related to stellar classification. The goal
+                  was to predict the spectral class of each observation, which
+                  could be one of three possibilities: star, galaxy, or quasar.
+                  One of the 17 features served as the target variable for this
+                  supervised multiclass classification problem, establishing the
+                  ground truth for our models. We aimed to build and compare
+                  four different classification models to accurately predict the
+                  spectral class of each observation. Overall, it took the team
+                  around 2 months to complete as we had to also make a report
+                  with the algorithm. It was a very interesting and fun project.
+                  From it, I learned many new topics throughout this module
+                  involving Machine Learning with developing a supervised
+                  classification algorithm being logistic regression using
+                  libraries such as pandas, NumPy, and Scikit-Learn. As well as
+                  comparing it with other developed classification algorithms
+                  with graph visualization using libraries such as Matplotlib,
+                  Seaborn, and Yellowbrick.
+                </p>
+              </a>
+              <span class="project-divider"></span>
+              <div class="btn-container">
+                <a
+                  href="https://colab.research.google.com/drive/1k9V_gNICvxd1-e2rVeBScICU9079l4EL?usp=sharing#scrollTo=Lwfm_ULKWiBV"
+                  class="btn"
+                  target="_blank"
+                  >demo <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a
+                  href="https://github.com/Amrit-Kooner/supervised-multiclassification-logistic-regression-algorithm"
+                  class="btn"
+                  target="_blank"
+                  >github <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a href="project-logreg.html" class="btn">learn more</a>
+              </div>
+              <span class="project-divider"></span>
+              <div class="project-tags scrollable">
+                <div>python</div>
+                <div>ai / ml</div>
+                <div>multi-classification</div>
+                <div>logistic regression</div>
+                <div>pandas</div>
+                <div>numpy</div>
+                <div>seaborn</div>
+                <div>matplotlib</div>
+              </div>
+            </div>
+
+            <div class="project">
+              <a href="project-tvremote.html">
+                <div class="project-img-wrapper">
+                  <img
+                    src="img/project-imgs/tv-remote/1.JPG"
+                    alt="tv remote img"
+                  />
+                </div>
+                <h3>voice control tv-remote</h3>
+                <span class="project-divider"></span>
+                <p>
+                  This project was created at my University as my final year
+                  dissertation for my Individual Honours Project module, where I
+                  decided to build a universal voice control TV remote aimed
+                  towards legacy TVs without built-in voice control
+                  functionality. Features include compatibility with all TV
+                  models, traditional buttons, and a Bluetooth-connected mobile
+                  app. Initially, the voice recognition was meant to be further
+                  improved using AI/ML and NLP with the NLTK library in Python,
+                  but time constraints prevented from this being implemented.
+                  The project aims to make voice-controlled technology
+                  accessible to those without smart TVs, benefiting people with
+                  disabilities and improving the TV viewing experience for all,
+                  with the goal of simplifying lives. This project was developed
+                  using Arduino with C++ and various libraries, including EEPROM
+                  to save hex codes in the Arduino ROM for remote code storage,
+                  IRremote for TV remote code recognition, VoiceRecognitionV3 to
+                  map voice commands to IR outputs, and SoftwareSerial for
+                  Bluetooth module communication. The app was created using MIT
+                  App Inventor as it allows easy connectivity to the main device
+                  via Bluetooth, enabling it to be controlled from the app to
+                  control the TV. MIT app inventor was used as it offers voice
+                  recognition with Google Voice To Text which is used to add
+                  voice control to the app. Overall, this project was very
+                  challenging as it involved many concepts I was not familiar
+                  with such as C++, Bluetooth technologies, Arduino, and circuit
+                  development and design. Also, it had many complex features. It
+                  took me the entire third year to complete because I had to not
+                  only build it but also write a report detailing my development
+                  journey and present it. From it, I learned how to program in
+                  C++ and develop and design Arduino circuits with it.
+                </p>
+              </a>
+              <span class="project-divider"></span>
+              <div class="btn-container">
+                <a
+                  href="https://github.com/Amrit-Kooner/voice-control-tv-remote-with-app"
+                  class="btn"
+                  target="_blank"
+                  >github <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a href="project-tvremote.html" class="btn">learn more</a>
+              </div>
+              <span class="project-divider"></span>
+              <div class="project-tags scrollable">
+                <div>c++</div>
+                <div>arduino</div>
+                <div>circuit development and design</div>
+                <div>voice control</div>
+                <div>bluetooth technologies</div>
+                <div>app development</div>
+                <div>mit app inventor</div>
+              </div>
+            </div>
+
+            <div class="project">
+              <a href="project-huddle.html">
+                <div class="project-img-wrapper">
+                  <img
+                    src="img/project-imgs/huddle-app/1.jpg"
+                    alt="charity app img"
+                  />
+                </div>
+                <h3>charity android app</h3>
+                <span class="project-divider"></span>
+                <p>
+                  This project was created at my University for my User
+                  Experience and Design, and Mobile and wearable Application
+                  Development modules, where I designed and developed a charity
+                  android CRUD app called Huddle that allows its users to donate
+                  to charities/fundraisers, create/delete fundraisers and also
+                  view charity news/events, with admin users additionally able
+                  to create/update/delete news/event posts. I chose to create a
+                  charity app as we were tasked to create one that could
+                  positively impact the world. I got the idea and created the
+                  designs of the app in my User Experience and Design module
+                  using Figma, while I developed the app in my Mobile and
+                  wearable Application Development module using Android Studio.
+                  My Figma designs have many features that were cut due to time
+                  restrictions, resource limitations, or errors. These being a
+                  color blindness settings page using the Android Accessibility
+                  API, include an inbox page for users to create chat rooms,
+                  search, and message others. For payment processing, integrate
+                  Google/PayPal/Web Stripe APIs, access the JustGiving API for
+                  charity and fundraiser data, enable sharing on social media
+                  using Twitter and Facebook APIs, and utilize the Retrofit as a
+                  REST client library to interact with web APIs for charity and
+                  donation platform data retrieval. Overall, it took me 2-3
+                  months to complete, and it was very challenging since I had
+                  not used Java for several months and had no prior experience
+                  with Android Studio. It was a massive CRUD project with
+                  complex features like admin login, email verification, real
+                  payment transactions using WebView, and many more. From it, I
+                  learned how to use Figma while improving my designing and
+                  creativity skills, as well as Android Studio while improving
+                  my knowledge of Java OOP.
+                </p>
+              </a>
+              <span class="project-divider"></span>
+              <div class="btn-container">
+                <a
+                  href="https://github.com/Amrit-Kooner/huddle-charity-android-app"
+                  class="btn"
+                  target="_blank"
+                  >github <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a href="project-huddle.html" class="btn">learn more</a>
+              </div>
+              <span class="project-divider"></span>
+              <div class="project-tags scrollable">
+                <div>java</div>
+                <div>crud</div>
+                <div>firebase</div>
+                <div>figma</div>
+                <div>android studio</div>
+                <div>google maps api</div>
+              </div>
+            </div>
+
+            <div class="project">
+              <a href="project-hangman.html">
+                <div class="project-img-wrapper">
+                  <img src="img/project-imgs/hangman/2.JPG" alt="hangman img" />
+                </div>
+                <h3>hangman game</h3>
+                <span class="project-divider"></span>
+                <p>
+                  This project was initially built in Python several years ago
+                  when I was learning the language, and it was played through
+                  the terminal. Recently, I decided to recreate it from scratch
+                  blindly using JavaScript, HTML, and CSS as it would be more
+                  interactive and an overall better project. It also gave me the
+                  chance to my understanding of DOM manipulation and general
+                  JavaScript. I didn’t focus on CSS on this project, it was
+                  mainly to test and improve my DOM manipulation skills.
+                  Overall, the project proved to be quite challenging with it
+                  taking me a week and a half, mainly due to recurring issues
+                  such as double confirmation pop-up notifications, where users
+                  had to confirm their actions twice, and also because I have
+                  not programmed in OOP in a few months with the last time in
+                  Java so it took me time to get used to its syntax. From it, I
+                  gained a better understanding of OOP and DOM manipulation in
+                  JavaScript.
+                </p>
+              </a>
+              <span class="project-divider"></span>
+              <div class="btn-container">
+                <a href="#" class="btn" target="_blank"
+                  >demo <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a
+                  href="https://amrit-kooner.github.io/hangman-game/start.html"
+                  class="btn"
+                  target="_blank"
+                  >github <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a href="project-hangman.html" class="btn">learn more</a>
+              </div>
+              <span class="project-divider"></span>
+              <div class="project-tags scrollable">
+                <div>html</div>
+                <div>css</div>
+                <div>javascript</div>
+              </div>
+            </div>
+
+            <div class="project">
+              <a href="project-sunnycroft.html">
+                <div class="project-img-wrapper">
+                  <img
+                    src="img/project-imgs/sunnycroft-site/1.JPG"
+                    alt="sunnycroft img"
+                  />
+                </div>
+                <h3>frontend museum site (sunnycroft)</h3>
+                <span class="project-divider"></span>
+                <p>
+                  This project was a remake of the first website I ever created
+                  during my first year at University as part of my Web Design
+                  and Development module. It was remade because I knew it could
+                  be significantly improved by implementing the new skills and
+                  best practices I have learned. Since it was my first website,
+                  it had a lot of messy spaghetti code. The project was based on
+                  a real place called Sunnycroft, which is a historic property
+                  located in Wellington, Shropshire, England. It is a
+                  Victorian-era suburban villa that has been preserved and is
+                  now open to the public as a museum. Overall, it was very
+                  simple to build as the layout and design were not complex, so
+                  it only took me around a week to complete. It was enjoyable
+                  revisiting and rebuilding my first-ever website, and it became
+                  clear to me just how much I had grown as a developer up to
+                  that point. From it, even though the project was simple I
+                  improved my HTML structuring, CSS flexbox, and element
+                  positioning.
+                </p>
+              </a>
+              <span class="project-divider"></span>
+              <div class="btn-container">
+                <a
+                  href="https://amrit-kooner.github.io/sunnycroft-museum-site/"
+                  class="btn"
+                  target="_blank"
+                  >demo <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a
+                  href="https://github.com/Amrit-Kooner/sunnycroft-museum-site"
+                  class="btn"
+                  target="_blank"
+                  >github <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a href="project-sunnycroft.html" class="btn">learn more</a>
+              </div>
+              <span class="project-divider"></span>
+              <div class="project-tags scrollable">
+                <div>html</div>
+                <div>css</div>
+                <div>javascript</div>
+                <div>google maps api</div>
+              </div>
+            </div>
+
+            <div class="project">
+              <a href="project-weather-app.html">
+                <div class="project-img-wrapper">
+                  <img
+                    src="img/project-imgs/weather-web-app/1.JPG"
+                    alt="weather web-app img"
+                  />
+                </div>
+                <h3>weather web-app</h3>
+                <span class="project-divider"></span>
+                <p>
+                  This project was my first attempt of linking and fetching data
+                  asynchronous from an API to then display it using DOM
+                  manipulation. I decided to make a weather web-app as its
+                  simple concept since its my first APIs project, and also
+                  because the API used was very simple and straightforward to
+                  setup being the Open Weather API. Originally, it was developed
+                  so the user could only search by city, but then I relasized it
+                  would be better if the user could also search by the country
+                  as well to filter out cities with the same name. HTML and CSS
+                  was not the main focus of this project but it still ended up
+                  being visually appealing. Overall, it was a intesting and
+                  enjoyable project as it involved new conepetes for me to learn
+                  being Asyrcnous programming with the fetch API function. It
+                  took me 3-4 days to complete as it wasn’t a large project with
+                  it having only a few hundren lines of HTML, CSS and
+                  JavsScript. From it, I gained a better grasp at Asyrcnous
+                  programming with the fetch API function in JavaScript as well
+                  as DOM maniputlation.
+                </p>
+              </a>
+              <span class="project-divider"></span>
+              <div class="btn-container">
+                <a
+                  href="https://amrit-kooner.github.io/weather-web-app/"
+                  class="btn"
+                  target="_blank"
+                  >demo <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a
+                  href="https://github.com/Amrit-Kooner/weather-web-app"
+                  class="btn"
+                  target="_blank"
+                  >github <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a href="project-weather-app.html" class="btn">learn more</a>
+              </div>
+              <span class="project-divider"></span>
+              <div class="project-tags scrollable">
+                <div>html</div>
+                <div>css</div>
+                <div>javascript</div>
+                <div>open weather api</div>
+                <div>asynchronous programming</div>
+              </div>
+            </div>
+
+            <div class="project">
+              <a href="project-astrom.html">
+                <div class="project-img-wrapper">
+                  <img
+                    src="img/project-imgs/astrom-site/1.JPG"
+                    alt="astrom img"
+                  />
+                </div>
+                <h3>astrom nasa archive site</h3>
+                <span class="project-divider"></span>
+                <p>????? ????? ?????</p>
+              </a>
+              <span class="project-divider"></span>
+              <div class="btn-container">
+                <a
+                  href="https://amrit-kooner.github.io/astrom-nasa-archive-site/"
+                  class="btn"
+                  target="_blank"
+                  >demo <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a
+                  href="https://github.com/Amrit-Kooner/astrom-nasa-archive-site"
+                  class="btn"
+                  target="_blank"
+                  >github <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a href="project-astrom.html" class="btn">learn more</a>
+              </div>
+              <span class="project-divider"></span>
+              <div class="project-tags scrollable">
+                <div>html</div>
+                <div>css</div>
+                <div>javascript</div>
+                <div>nasa api</div>
+                <div>asynchronous programming</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="contact-section" id="contact">
+      <div class="container">
+        <h1 class="section-title">contact</h1>
+        <div class="contact-wrapper">
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xpzgrnvp"
+            method="POST"
+          >
+            <h2 class="footer-title">get in touch</h2>
+            <div class="form-full-name">
+              <input
+                class="form-input"
+                name="fname"
+                placeholder="First Name..."
+                maxlength="50"
+                required
+              />
+              <input
+                class="form-input"
+                name="lname"
+                type="text"
+                placeholder="Last Name..."
+                maxlength="50"
+                required
+              />
+            </div>
+            <input
+              class="form-input"
+              name="email"
+              type="email"
+              placeholder="Your Email..."
+              maxlength="75"
+              required
+            />
+            <textarea
+              class="form-input form-textarea scrollable"
+              name="message"
+              placeholder="Message..."
+              maxlength="1000"
+              required
+            ></textarea>
+            <input class="form-btn btn" type="submit" value="send" />
+          </form>
+
+          <div class="footer-navigation">
+            <h2 class="footer-title">navigate</h2>
             <ul>
-                <li><a href="#home">home</a></li>
-                <li><a href="#skills">skills</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#contact">contact</a></li>
+              <li><a href="#home">home</a></li>
+              <li><a href="#skills">skills</a></li>
+              <li><a href="#projects">projects</a></li>
+              <li><a href="#contact">contact</a></li>
             </ul>
-        </nav>
+          </div>
+        </div>
 
-        <aside class="sidebar scrollable">
-            <div class="sidebar-socials">
-                <a class="tooltip-element" data-tooltip="LINKEDIN" href="https://www.linkedin.com/in/amrit-kooner/" target="_blank">
-                    <img src="img/icons/linkedin.svg" alt="Linkedin Link">
-                </a>
-                <a class="tooltip-element" data-tooltip="GITHUB" href="https://github.com/Amrit-Kooner" target="_blank">
-                    <img src="img/icons/github.svg" alt="GitHub Link">
-                </a>
-                <a class="tooltip-element" data-tooltip="INSTAGRAM" href="https://www.instagram.com/amritkooner47/" target="_blank">
-                    <img src="img/icons/instagram.svg" alt="Instagram Link">
-                </a>
-                <a class="tooltip-element" data-tooltip="EMAIL" href="mailto:amritkooner47@gmail.com" target="_blank">
-                    <img src="img/icons/mail.svg" alt="Email Link">
-                </a>
-            </div>
+        <div class="footer-socials">
+          <a
+            href="https://discord.com/users/292688252501229568"
+            title="Discord"
+            target="_blank"
+            ><i class="fa-brands fa-discord"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/amrit-kooner/"
+            title="Linkedin"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/amritkooner47/"
+            title="Instagram"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://twitter.com/amritk117"
+            title="Twitter"
+            target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+      </div>
 
-            <span class="sidebar-divider">‎</span>
-
-            <div class="sidebar-logic">
-                <button class="theme-btn tooltip-element" data-tooltip="THEME">
-                    <img class="theme-icon" src="img/icons/sun.svg" alt="Theme Toggle Icon">
-                </button>
-                <button class="volume-btn tooltip-element" data-tooltip="VOLUME">
-                    <img class="volume-icon" src="img/icons/volume-x.svg" alt="Volume Toggle Icon">
-                </button>
-                <a class=" tooltip-element" data-tooltip="SETTINGS" href="#">
-                    <img src="img/icons/settings.svg" alt="Settings Icon">
-                </a>
-                <a class="tooltip-element" data-tooltip="BACK TO TOP" href="#home">
-                    <img src="img/icons/arrow-up-circle.svg" alt="Back-To-Top Icon">
-                </a>
-            </div>
-        </aside> 
-
-        <main class="main">
-            <section class="about-section" id="home">
-                <div class="container">
-                    <div class="about-img">
-                        <img class="#" src="img/me.jpg" alt="me!"/>
-                    </div>
-
-                    <div class="about-text">
-                        <h1>hello i'm, <span>amrit kooner.</span> 👋🏽</h1>
-                        <p>First-Class Computer Science graduate from Birmingham City University. Inspiring to become a Front-end Developer / Software Engineer. Eager to learn and is unafraid of challenges.</p>
-                        <a class="about-btn btn" href="doc/CV.pdf" target="_blank">preview cv <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="skills-section" id="skills">
-                <div class="container">
-                    <h1 class="section-title">skills</h1>
-                    <div class="skill-wrapper">
-                        <div class="title-wrapper">
-                            <h3>current</h3>
-                            <span class="skill-divider"></span>
-                        </div>
-                        <div class="skill-cards">
-                            <div class="card">
-                                <img src="img/icons/html.svg" alt="html icon">
-                                <span>html</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/css.svg" alt="css icon">
-                                <span>css</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/js.svg" alt="js icon">
-                                <span>javascript</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/python.svg" alt="python icon">
-                                <span>python</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/cli.svg" alt="cli icon">
-                                <span>bash cli</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/git.svg" alt="git icon">
-                                <span>git</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/github2.svg" alt="github icon">
-                                <span>github</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/postman.svg" alt="postman icon">
-                                <span>postman</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/figma.svg" alt="figma icon">
-                                <span>figma</span>
-                            </div>
-                        </div>
-                        <p class="skill-category-desc">- Skills I currently possess and actively use productively, but still have many areas to improve.</p>
-                    </div>
-
-                    <div class="skill-wrapper">
-                        <div class="title-wrapper">
-                            <h3>learning</h3>
-                            <span class="skill-divider"></span>
-                        </div>
-                        <div class="skill-cards">
-                            <div class="card">
-                                <img src="img/icons/react.svg" alt="react icon">
-                                <span>react.js</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/tailwind.svg" alt="tailwind icon">
-                                <span>tailwind</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/typescript.svg" alt="typescript icon">
-                                <span>typescript</span>
-                            </div>
-                        </div>
-                        <p class="skill-category-desc">- Skills I am currently learning and building new projects with.</p>
-                    </div>
-
-                    <div class="skill-wrapper">
-                        <div class="title-wrapper">
-                            <h3>interests</h3>
-                            <span class="skill-divider"></span>
-                        </div>
-                        <div class="skill-cards">
-                            <div class="card">
-                                <img src="img/icons/sql.svg" alt="sql icon">
-                                <span>sql</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/php.svg" alt="php icon">
-                                <span>php</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/node.svg" alt="node icon">
-                                <span>node.js</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/next.svg" alt="next icon">
-                                <span>next.js</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/vue.svg" alt="vue icon">
-                                <span>vue.js</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/express.svg" alt="express icon">
-                                <span>express.js</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/mongodb.svg" alt="mongodb icon">
-                                <span>mongodb</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/django.svg" alt="django icon">
-                                <span>django</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/bun.svg" alt="bun icon">
-                                <span>bun.js</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/materialui.svg" alt="materialui icon">
-                                <span>material ui</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/web3.svg" alt="web3 icon">
-                                <span>web3.js</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/docker.svg" alt="docker icon">
-                                <span>docker</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/aws.svg" alt="aws icon">
-                                <span>AWS</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/shopify.svg" alt="aws icon">
-                                <span>shopify</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/blockchain.svg" alt="blockchain icon">
-                                <span>blockchain</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/solidity.svg" alt="solidity icon">
-                                <span>solidity</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/photoshop.svg" alt="photoshop icon">
-                                <span>photoshop</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/wordpress.svg" alt="wordpress icon">
-                                <span>wordpress</span>
-                            </div>
-                        </div>
-                        <p class="skill-category-desc">- Skills I am interested in learning within the near future to increase my knowledge and tech stack in the field.</p>
-                    </div>
-
-                    <div class="skill-wrapper">
-                        <div class="title-wrapper">
-                            <h3>rusty</h3>
-                            <span class="skill-divider"></span>
-                        </div>
-                        <div class="skill-cards">
-                            <div class="card">
-                                <img src="img/icons/unity.svg" alt="unity icon">
-                                <span>unity</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/pandas.svg" alt="pandas icon">
-                                <span>pandas</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/numpy.svg" alt="numpy icon">
-                                <span>numpy</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/matplotlib.svg" alt="matplotlib icon">
-                                <span>matplotlib </span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/seaborn.svg" alt="seaborn icon">
-                                <span>seaborn</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/c.svg" alt="c# icon">
-                                <span>c#</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/csharp.svg" alt="c++ icon">
-                                <span>c++</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/php.svg" alt="php icon">
-                                <span>php</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/sql.svg" alt="sql icon">
-                                <span>sql</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/java.svg" alt="java icon">
-                                <span>java</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/django.svg" alt="django icon">
-                                <span>django</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/firebase.svg" alt="firebase icon">
-                                <span>firebase</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/xampp.svg" alt="xampp icon">
-                                <span>xampp</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/adobexd.svg" alt="adobe xd icon">
-                                <span>adobe xd</span>
-                            </div>
-                            <div class="card">
-                                <img src="img/icons/arduino.svg" alt="arduino icon">
-                                <span>arduino</span>
-                            </div>
-                        </div>
-                        <p class="skill-category-desc">- Skills I once knew and worked with in the past but mostly to medianly forgotten due to lack of practice and use, however these can be quickly relearnt if required as I once knew them.
-                        </p>
-                    </div>
-
-                    <!-- progress bars -->
-                    <div class="skill-progression-bars">
-                        <div class="skill-progress">
-                            <div class="card">
-                                <img src="img/icons/html.svg" alt="html icon">
-                                <span>html</span>
-                            </div>
-                            <div class="progress-wrapper">
-                                <div>
-                                    <span>0</span>
-                                    <span>5</span>
-                                    <span>10</span>
-                                </div>
-                                <progress max="10" value="7"></progress>
-                            </div>
-                        </div>
-
-                        <div class="skill-progress">
-                            <div class="card">
-                                <img src="img/icons/css.svg" alt="css icon">
-                                <span>css</span>
-                            </div>
-                            <div class="progress-wrapper">
-                                <div>
-                                    <span>0</span>
-                                    <span>5</span>
-                                    <span>10</span>
-                                </div>
-                                <progress max="10" value="5"></progress>
-                            </div>
-                        </div>
-
-                        <div class="skill-progress">
-                            <div class="card">
-                                <img src="img/icons/js.svg" alt="js icon">
-                                <span>javascript</span>
-                            </div>
-                            <div class="progress-wrapper">
-                                <div>
-                                    <span>0</span>
-                                    <span>5</span>
-                                    <span>10</span>
-                                </div>
-                                <progress max="10" value="4"></progress>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="projects-section" id="projects">
-                <div class="container">
-                    <h1 class="section-title">projects</h1>
-                    <div class="projects-container">
-                        <div class="project">
-                            <a href="project-google.html">
-                                <div class="project-img-wrapper">
-                                    <img src="img/project-imgs/google-clone/1.JPG" alt="google clone img">
-                                </div>
-                                <h3>frontend google clone</h3>
-                                <span class="project-divider"></span>
-                                <p>
-                                    This project was my first attempt at cloning a website and I chose Google specifically as it seemed simple to clone because I wanted a small project to do over the weekend. 
-                                    However, I quickly realized that I had underestimated this project, as it had many complex components such as the recommended drop-down search results, as well as the search-by-image and search-by-voice features. 
-                                    The hardest part was the recommended drop-down search results as it required a lot of JavaScript which I wasn’t so comfortable using at the time. Annoyingly, 
-                                    a couple of days after I finished the project the actual Google website was visually updated being the Google apps and Google account drop-down sections. 
-                                    Overall it gave me quite a challenge and it took me around 3 weeks to complete because it had many complex components as previously mentioned and it was created 
-                                    alongside my Fromhardware e-commerce project. From it, I improved my JavaScript DOM manipulation, and HTML structuring, as well as my CSS flexbox and element positioning.
-                                </p>
-                            </a>
-                            <span class="project-divider"></span>
-                            <div class="btn-container">
-                                <a href="https://amrit-kooner.github.io/frontend-google-clone/" class="btn" target="_blank">demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a href="https://github.com/Amrit-Kooner/frontend-google-clone" class="btn" target="_blank">github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a href="project-google.html" class="btn">learn more</a>
-                            </div>
-                            <span class="project-divider"></span>
-                            <div class="project-tags scrollable">
-                                <div>html</div>
-                                <div>css</div>
-                                <div>javascript</div>
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <a href="project-fromhardware.html">
-                                <div class="project-img-wrapper">
-                                    <img src="img/project-imgs/fromhardware-site/1.JPG" alt="e-commerce site img">
-                                </div>
-                                <h3>frontend e-commmerce site</h3>
-                                <span class="project-divider"></span>
-                                <p>
-                                    This project was inspired by another project I created at my University for my Database and Web Application Development module, which was also a gaming e-commerce website called Fromhardware. 
-                                    However, that was a full CRUD full-stack project which utilized a backend server powered by XAMPP, SQL, and PHP, to store, edit, delete, create, read, and manage various objects, such as video 
-                                    games that were displayed on the webpage. 
-                                    I decided not to include that project as it contained messy, spaghetti code and it utilized Bootstrap which I dislike. This current project is purely frontend in nature since 
-                                    I have not actively used XAMPP, PHP, and SQL for some time. It is the first web-related project in over a year and the first that utilizes JavaScript and heavy CSS flexboxes. 
-                                    Overall, it was fairly simple to build and more of a quick refresher of the skills I have forgotten in the past, it took me between 2 and 3 weeks to complete as it was built alongside 
-                                    my Google Clone project From it, I improved my JavaScript DOM manipulation, and HTML structuring, as well as my CSS flexbox and element positioning.                                    
-                                </p>
-                            </a>
-                            <span class="project-divider"></span>
-                            <div class="btn-container">
-                                <a href="https://amrit-kooner.github.io/fromhardware-ecommerce-gaming-site/" class="btn" target="_blank">demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a href="https://github.com/Amrit-Kooner/fromhardware-ecommerce-gaming-site" class="btn" target="_blank">github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a href="project-fromhardware.html" class="btn">learn more</a>
-                            </div>
-                            <span class="project-divider"></span>
-                            <div class="project-tags scrollable">
-                                <div>html</div>
-                                <div>css</div>
-                                <div>javascript</div>
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <a href="project-portfolio.html">
-                                <div class="project-img-wrapper">
-                                    <img src="img/project-imgs/portfolio/1.JPG" alt="portfolio img">
-                                </div>
-                                <h3>personal portfolio site</h3>
-                                <span class="project-divider"></span>
-                                <p>
-                                    This project is my personal proudest and most well-built in terms of UI design and code, as it's very clean using best practices in HTML, CSS, and JavaScript. 
-                                    A lot of time and care was put into this project as it's my most important one since it’s a portfolio, it will be my first project that potential employers see.  And because of this, 
-                                    I wanted to make it more personalized and unique to make it stand out more. So I incorporated many features, such as a sidebar menu having utility buttons like a mute and settings button. 
-                                    It has a mute button as it was intended to have sound effects with interactable, and a settings page where the user can personalize and alter the color of the website. However, 
-                                    the logic for the mute and settings buttons hasn’t yet been implemented due to time constants. It was my first project have utilized transition animations which were used on the burger menu and sidebar, 
-                                    and my first that used CSS grid-box which was used on the projects and skills page.
-                                    Overall, it was a very difficult and stress-worthy project as I don’t see myself as a good designer even though the design here is very aesthetic, it took me a while to think of these design choices. 
-                                    Also, since it had many complex components and logic, such as the sidebar and burger menu incorporated with JavaScript for toggling their status and loading/saving their state in the user’s local storage. 
-                                    This project took me around over a month to complete since it's my most polished and well-built yet and due to the difficulty as I previously mentioned. From it, I have learned more about using transition 
-                                    animations and gridbox in CSS, while also gaining experience in a more designer-focused mindset as I had to think very hard about design choices to use to ensure the project was aesthetically pleasant. 
-                                    I also further improved my HTML structuring, CSS flexbox, and element positioning.
-                                </p>
-                            </a>
-                            <span class="project-divider"></span>
-                            <div class="btn-container">
-                                <a href="https://github.com/Amrit-Kooner/personal-portfolio" class="btn" target="_blank">github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a href="project-portfolio.html" class="btn">learn more</a>
-                            </div>
-                            <span class="project-divider"></span>
-                            <div class="project-tags scrollable">
-                                <div>html</div>
-                                <div>css</div>
-                                <div>javascript</div>
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <a href="project-logreg.html">
-                                <div class="project-img-wrapper">
-                                    <img src="img/project-imgs/logistic-regression/3.JPG" alt="ai algorithm img">
-                                </div>
-                                <h3>logistic regression algo</h3>
-                                <span class="project-divider"></span>
-                                <p>
-                                    This project was created at my University for my Artificial Intelligence and Machine Learning module, where I collaborated with a team of four members to create supervised machine learning algorithms for predicting 
-                                    spectral classes based on a given dataset. Each team member was responsible for developing a distinct algorithm model suited to our dataset. I chose to implement a logistic regression algorithm for this purpose. 
-                                    We used Python, along with libraries such as Scikit-learn for machine learning, Pandas for data manipulation, and Seaborn/Matplotlib for data visualization. Our dataset comprised 17 features and 100,000 observations, 
-                                    representing real-world data related to stellar classification. The goal was to predict the spectral class of each observation, which could be one of three possibilities: star, galaxy, or quasar. One of the 17 features 
-                                    served as the target variable for this supervised multiclass classification problem, establishing the ground truth for our models. We aimed to build and compare four different classification models to accurately predict 
-                                    the spectral class of each observation. Overall, it took the team around 2 months to complete as we had to also make a report with the algorithm. It was a very interesting and fun project. From it, I learned many new topics 
-                                    throughout this module involving Machine Learning with developing a supervised classification algorithm being logistic regression using libraries such as pandas, NumPy, and Scikit-Learn. As well as comparing it with other 
-                                    developed classification algorithms with graph visualization using libraries such as Matplotlib, Seaborn, and Yellowbrick.
-                                </p>
-                            </a>
-                            <span class="project-divider"></span>
-                            <div class="btn-container">
-                                <a href="https://colab.research.google.com/drive/1k9V_gNICvxd1-e2rVeBScICU9079l4EL?usp=sharing#scrollTo=Lwfm_ULKWiBV" class="btn" target="_blank">demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a href="https://github.com/Amrit-Kooner/supervised-multiclassification-logistic-regression-algorithm" class="btn" target="_blank">github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a href="project-logreg.html" class="btn">learn more</a>
-                            </div>
-                            <span class="project-divider"></span>
-                            <div class="project-tags scrollable">
-                                <div>python</div>
-                                <div>ai / ml</div>
-                                <div>multi-classification</div>
-                                <div>logistic regression</div>
-                                <div>pandas</div>
-                                <div>numpy</div>
-                                <div>seaborn</div>
-                                <div>matplotlib</div>
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <a href="project-tvremote.html">
-                                <div class="project-img-wrapper">
-                                    <img src="img/project-imgs/tv-remote/1.JPG" alt="tv remote img">
-                                </div>
-                                <h3>voice control tv-remote</h3>
-                                <span class="project-divider"></span>
-                                <p>
-                                    This project was created at my University as my final year dissertation for my Individual Honours Project module, where I decided to build a universal voice control TV remote aimed towards legacy TVs without built-in voice 
-                                    control functionality. Features include compatibility with all TV models, traditional buttons, and a Bluetooth-connected mobile app. Initially, the voice recognition was meant to be further improved using AI/ML and NLP with 
-                                    the NLTK library in Python, but time constraints prevented from this being implemented. The project aims to make voice-controlled technology accessible to those without smart TVs, benefiting people with disabilities and 
-                                    improving the TV viewing experience for all, with the goal of simplifying lives. This project was developed using Arduino with C++ and various libraries, including EEPROM to save hex codes in the Arduino ROM for remote 
-                                    code storage, IRremote for TV remote code recognition, VoiceRecognitionV3 to map voice commands to IR outputs, and SoftwareSerial for Bluetooth module communication. The app was created using MIT App Inventor as it allows 
-                                    easy connectivity to the main device via Bluetooth, enabling it to be controlled from the app to control the TV. MIT app inventor was used as it offers voice recognition with Google Voice To Text which is used to add voice 
-                                    control to the app. Overall, this project was very challenging as it involved many concepts I was not familiar with such as C++, Bluetooth technologies, Arduino, and circuit development and design. Also, it had many complex 
-                                    features. It took me the entire third year to complete because I had to not only build it but also write a report detailing my development journey and present it. From it, I learned how to program in C++ and develop and design 
-                                    Arduino circuits with it.
-                                </p>
-                            </a>
-                            <span class="project-divider"></span>
-                            <div class="btn-container">
-                                <a href="https://github.com/Amrit-Kooner/voice-control-tv-remote-with-app" class="btn" target="_blank">github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a href="project-tvremote.html" class="btn">learn more</a>
-                            </div>
-                            <span class="project-divider"></span>
-                            <div class="project-tags scrollable">
-                                <div>c++</div>
-                                <div>arduino</div>
-                                <div>circuit development and design</div>
-                                <div>voice control</div>
-                                <div>bluetooth technologies</div>
-                                <div>app development</div>
-                                <div>mit app inventor</div>
-                            </div>
-                        </div>
-                        
-                        <div class="project">
-                            <a href="project-huddle.html">
-                                <div class="project-img-wrapper">
-                                    <img src="img/project-imgs/huddle-app/1.jpg" alt="charity app img">
-                                </div>
-                                <h3>charity android app</h3>
-                                <span class="project-divider"></span>
-                                <p>
-                                    This project was created at my University for my User Experience and Design, and Mobile and wearable Application Development modules, where I designed and developed a charity android 
-                                    CRUD app called Huddle that allows its users to donate to charities/fundraisers, create/delete fundraisers and also view charity news/events, with admin users additionally able to 
-                                    create/update/delete news/event posts. I chose to create a charity app as we were tasked to create one that could positively impact the world. I got the idea and created the designs
-                                    of the app in my User Experience and Design module using Figma, while I developed the app in my Mobile and wearable Application Development module using Android Studio. My Figma 
-                                    designs have many features that were cut due to time restrictions, resource limitations, or errors. These being a color blindness settings page using the Android Accessibility API,
-                                    include an inbox page for users to create chat rooms, search, and message others. For payment processing, integrate Google/PayPal/Web Stripe APIs, access the JustGiving API for 
-                                    charity and fundraiser data, enable sharing on social media using Twitter and Facebook APIs, and utilize the Retrofit as a REST client library to interact with web APIs for charity
-                                    and donation platform data retrieval. Overall, it took me 2-3 months to complete, and it was very challenging since I had not used Java for several months and had no prior experience
-                                    with Android Studio. It was a massive CRUD project with complex features like admin login, email verification, real payment transactions using WebView, and many more. From it, 
-                                    I learned how to use Figma while improving my designing and creativity skills, as well as Android Studio while improving my knowledge of Java OOP.
-                                </p>
-                            </a>
-                            <span class="project-divider"></span>
-                            <div class="btn-container">
-                                <a href="https://github.com/Amrit-Kooner/huddle-charity-android-app" class="btn" target="_blank">github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a href="project-huddle.html" class="btn">learn more</a>
-                            </div>
-                            <span class="project-divider"></span>
-                            <div class="project-tags scrollable">
-                                <div>java</div>
-                                <div>crud</div>
-                                <div>firebase</div>
-                                <div>figma</div>
-                                <div>android studio</div>
-                                <div>google maps api</div>
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <a href="project-hangman.html">
-                                <div class="project-img-wrapper">
-                                    <img src="img/project-imgs/hangman/2.JPG" alt="hangman img">
-                                </div>
-                                <h3>hangman game</h3>
-                                <span class="project-divider"></span>
-                                <p>
-                                    This project was initially built in Python several years ago when I was learning the language, and it was played through the terminal. 
-                                    Recently, I decided to recreate it from scratch blindly using JavaScript, HTML, and CSS as it would be more interactive and an overall better project. 
-                                    It also gave me the chance to my understanding of DOM manipulation and general JavaScript. I didn’t focus on CSS on this project, it was mainly to test and improve my DOM manipulation skills.
-                                    Overall, the project proved to be quite challenging with it taking me a week and a half, mainly due to recurring issues such as double confirmation pop-up notifications, 
-                                    where users had to confirm their actions twice, and also because I have not programmed in OOP in a few months with the last time in Java so it took me time to get used to its syntax. 
-                                    From it, I gained a better understanding of OOP and DOM manipulation in JavaScript.                                    
-                                </p>
-                            </a>
-                            <span class="project-divider"></span>
-                            <div class="btn-container">
-                                <a href="#" class="btn" target="_blank">demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a href="https://amrit-kooner.github.io/hangman-game/start.html" class="btn" target="_blank">github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a href="project-hangman.html" class="btn">learn more</a>
-                            </div>
-                            <span class="project-divider"></span>
-                            <div class="project-tags scrollable">
-                                <div>html</div>
-                                <div>css</div>
-                                <div>javascript</div>
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <a href="project-sunnycroft.html">
-                                <div class="project-img-wrapper">
-                                    <img src="img/project-imgs/sunnycroft-site/1.JPG" alt="sunnycroft img">
-                                </div>
-                                <h3>frontend museum site (sunnycroft)</h3>
-                                <span class="project-divider"></span>
-                                <p>
-                                    This project was a remake of the first website I ever created during my first year at University as part of my Web Design and Development module. 
-                                    It was remade because I knew it could be significantly improved by implementing the new skills and best practices I have learned. Since it was my first website, it had a lot of messy spaghetti code. 
-                                    The project was based on a real place called Sunnycroft, which is a historic property located in Wellington, Shropshire, England. 
-                                    It is a Victorian-era suburban villa that has been preserved and is now open to the public as a museum. 
-                                    Overall, it was very simple to build as the layout and design were not complex, so it only took me around a week to complete. It was enjoyable revisiting and rebuilding my first-ever website, 
-                                    and it became clear to me just how much I had grown as a developer up to that point. From it, even though the project was simple I improved my HTML structuring, CSS flexbox, and element positioning.                                    
-                                </p>
-                            </a>
-                            <span class="project-divider"></span>
-                            <div class="btn-container">
-                                <a href="https://amrit-kooner.github.io/sunnycroft-museum-site/" class="btn" target="_blank">demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a href="https://github.com/Amrit-Kooner/sunnycroft-museum-site" class="btn" target="_blank">github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a href="project-sunnycroft.html" class="btn">learn more</a>
-                            </div>
-                            <span class="project-divider"></span>
-                            <div class="project-tags scrollable">
-                                <div>html</div>
-                                <div>css</div>
-                                <div>javascript</div>
-                                <div>google maps api</div>
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <a href="project-weather-app.html">
-                                <div class="project-img-wrapper">
-                                    <img src="img/project-imgs/weather-web-app/1.JPG" alt="weather web-app img">
-                                </div>
-                                <h3>weather web-app</h3>
-                                <span class="project-divider"></span>
-                                <p>
-                                    This project was my first attempt that of linking and fetching data asynchronous from an API to then display it using DOM manipulation. I decided to make a weather web-app as its simple concept since its my first APIs project, 
-                                    and also because the API used was very simple and straightforward to setup being the Open Weather API. Originally, it was developed so the user could only search by city, but then I relasized it would be better if the user could
-                                    also search by the country as well to filter out cities with the same name. HTML and CSS was not the main focus of this project but it still ended up being visually appealing. Overall, it was a intesting and enjoyable project as 
-                                    it involved new conepetes for me to learn being Asyrcnous programming with the fetch API function. It took me 3-4 days to complete as it wasn’t a large project with it having only a few hundren lines of HTML, CSS and JavsScript. 
-                                    From it, I gained a better grasp at Asyrcnous programming with the fetch API function in JavaScript as well as DOM maniputlation.
-                                </p>
-                            </a>
-                            <span class="project-divider"></span>
-                            <div class="btn-container">
-                                <a href="https://amrit-kooner.github.io/weather-web-app/" class="btn" target="_blank">demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a href="https://github.com/Amrit-Kooner/weather-web-app" class="btn" target="_blank">github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a href="project-weather-app.html" class="btn">learn more</a>
-                            </div>
-                            <span class="project-divider"></span>
-                            <div class="project-tags scrollable">
-                                <div>html</div>
-                                <div>css</div>
-                                <div>javascript</div>
-                                <div>open weather api</div>
-                                <div>asynchronous programming</div>
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <a href="project-astrom.html">
-                                <div class="project-img-wrapper">
-                                    <img src="img/project-imgs/astrom-site/1.JPG" alt="astrom img">
-                                </div>
-                                <h3>astrom nasa archive site</h3>
-                                <span class="project-divider"></span>
-                                <p>
-                                    ?????
-                                    ?????
-                                    ?????
-                                </p>
-                            </a>
-                            <span class="project-divider"></span>
-                            <div class="btn-container">
-                                <a href="https://amrit-kooner.github.io/astrom-nasa-archive-site/" class="btn" target="_blank">demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a href="https://github.com/Amrit-Kooner/astrom-nasa-archive-site" class="btn" target="_blank">github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a href="project-astrom.html" class="btn">learn more</a>
-                            </div>
-                            <span class="project-divider"></span>
-                            <div class="project-tags scrollable">
-                                <div>html</div>
-                                <div>css</div>
-                                <div>javascript</div>
-                                <div>nasa api</div>
-                                <div>asynchronous programming</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main> 
-    
-        <footer class="contact-section" id="contact">
-            <div class="container">
-                <h1 class="section-title">contact</h1>
-                <div class="contact-wrapper">
-                    <form class="contact-form" action="https://formspree.io/f/xpzgrnvp" method="POST">
-                        <h2 class="footer-title">get in touch</h2>
-                        <div class="form-full-name">
-                            <input class="form-input" name="fname" placeholder="First Name..." maxlength="50" required> 
-                            <input class="form-input" name="lname" type="text" placeholder="Last Name..." maxlength="50" required>
-                        </div>
-                        <input class="form-input" name="email" type="email" placeholder="Your Email..." maxlength="75" required>
-                        <textarea class="form-input form-textarea scrollable" name="message" placeholder="Message..." maxlength="1000" required></textarea>
-                        <input class="form-btn btn" type="submit" value="send">
-                    </form>
-                    
-                    <div class="footer-navigation">
-                        <h2 class="footer-title">navigate</h2>
-                        <ul>
-                            <li><a href="#home">home</a></li>
-                            <li><a href="#skills">skills</a></li>
-                            <li><a href="#projects">projects</a></li>
-                            <li><a href="#contact">contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="footer-socials">
-                    <a href="https://discord.com/users/292688252501229568" title="Discord" target="_blank"><i class="fa-brands fa-discord"></i></a>
-                    <a href="https://www.linkedin.com/in/amrit-kooner/" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/amritkooner47/" title="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://twitter.com/amritk117" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
-
-            <div class="copyright">&copy; copyright - <span>amrit kooner 2023</span></div>
-        </footer>
-    </body>
+      <div class="copyright">
+        &copy; copyright - <span>amrit kooner 2023</span>
+      </div>
+    </footer>
+  </body>
 </html>

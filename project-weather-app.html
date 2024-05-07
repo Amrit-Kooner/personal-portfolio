@@ -1,149 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- META -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Portfolio">
-    <meta name="author" content="Amrit Saab Kooner">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal Portfolio" />
+    <meta name="author" content="Amrit Saab Kooner" />
     <!-- LINK  -->
-    <link rel="shortcut icon" type="image/icon" href="img/icons/smile.svg">
-    <link rel="stylesheet"href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/icon" href="img/icons/smile.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <!-- SCRIPT -->
     <script src="script/app.js" defer></script>
-    <script src="https://kit.fontawesome.com/64885c474e.js" defer crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/64885c474e.js"
+      defer
+      crossorigin="anonymous"
+    ></script>
     <!-- TITLE -->
     <title>Portfolio - Weather Web-App Project</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <button class="sidebar-btn tooltip-element" data-tooltip="SIDEBAR">
-            <img class="sidebar-icon" src="img/icons/chevrons-down.svg" alt="Sidebar Toggle Icon">
-        </button>
+      <button class="sidebar-btn tooltip-element" data-tooltip="SIDEBAR">
+        <img
+          class="sidebar-icon"
+          src="img/icons/chevrons-down.svg"
+          alt="Sidebar Toggle Icon"
+        />
+      </button>
 
-        <button class="burger-menu-btn tooltip-element" data-tooltip="BURGER MENU">
-            <img class="burger-icon" src="img/icons/x.svg" alt="Burger Menu Icon">
-        </button>
+      <button
+        class="burger-menu-btn tooltip-element"
+        data-tooltip="BURGER MENU"
+      >
+        <img class="burger-icon" src="img/icons/x.svg" alt="Burger Menu Icon" />
+      </button>
     </header>
 
     <nav class="burger-menu">
-        <ul>
-            <li><a href="index.html#home">home</a></li>
-            <li><a href="index.html#skills">skills</a></li>
-            <li><a href="index.html#projects">projects</a></li>
-            <li><a href="index.html#contact">contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html#home">home</a></li>
+        <li><a href="index.html#skills">skills</a></li>
+        <li><a href="index.html#projects">projects</a></li>
+        <li><a href="index.html#contact">contact</a></li>
+      </ul>
     </nav>
 
     <aside class="sidebar">
-        <div class="sidebar-socials">
-            <a class="linkedin-link tooltip-element" data-tooltip="LINKEDIN" href="https://www.linkedin.com/in/amrit-kooner/" target="_blank">
-                <img src="img/icons/linkedin.svg" alt="Linkedin Link">
-            </a>
-            <a class="github-link tooltip-element" data-tooltip="GITHUB" href="https://github.com/Amrit-Kooner" target="_blank">
-                <img src="img/icons/github.svg" alt="GitHub Link">
-            </a>
-            <a class="instagram-link tooltip-element" data-tooltip="INSTAGRAM" href="#" target="_blank">
-                <img src="img/icons/instagram.svg" alt="Instagram Link">
-            </a>
-            <a class="email-link tooltip-element" data-tooltip="EMAIL" href="#" target="_blank">
-                <img src="img/icons/mail.svg" alt="Email Link">
-            </a>
-        </div>
+      <div class="sidebar-socials">
+        <a
+          class="linkedin-link tooltip-element"
+          data-tooltip="LINKEDIN"
+          href="https://www.linkedin.com/in/amrit-kooner/"
+          target="_blank"
+        >
+          <img src="img/icons/linkedin.svg" alt="Linkedin Link" />
+        </a>
+        <a
+          class="github-link tooltip-element"
+          data-tooltip="GITHUB"
+          href="https://github.com/Amrit-Kooner"
+          target="_blank"
+        >
+          <img src="img/icons/github.svg" alt="GitHub Link" />
+        </a>
+        <a
+          class="instagram-link tooltip-element"
+          data-tooltip="INSTAGRAM"
+          href="#"
+          target="_blank"
+        >
+          <img src="img/icons/instagram.svg" alt="Instagram Link" />
+        </a>
+        <a
+          class="email-link tooltip-element"
+          data-tooltip="EMAIL"
+          href="#"
+          target="_blank"
+        >
+          <img src="img/icons/mail.svg" alt="Email Link" />
+        </a>
+      </div>
 
-        <span class="sidebar-divider">‎</span>
+      <span class="sidebar-divider">‎</span>
 
-        <div class="sidebar-logic">
-            <button class="theme-btn tooltip-element" data-tooltip="THEME">
-                <img class="theme-icon" src="img/icons/sun.svg" alt="Theme Toggle Icon">
-            </button>
-            <button class="volume-btn tooltip-element" data-tooltip="VOLUME">
-                <img class="volume-icon" src="img/icons/volume-x.svg" alt="Volume Toggle Icon">
-            </button>
-            <a class="settings-btn tooltip-element" data-tooltip="SETTINGS" href="#">
-                <img src="img/icons/settings.svg" alt="Settings Icon">
-            </a>
-            <a class="top-btn tooltip-element" data-tooltip="BACK TO TOP" href="#home">
-                <img src="img/icons/arrow-up-circle.svg" alt="Back-To-Top Icon">
-            </a>
-        </div>
-    </aside> 
+      <div class="sidebar-logic">
+        <button class="theme-btn tooltip-element" data-tooltip="THEME">
+          <img
+            class="theme-icon"
+            src="img/icons/sun.svg"
+            alt="Theme Toggle Icon"
+          />
+        </button>
+        <button class="volume-btn tooltip-element" data-tooltip="VOLUME">
+          <img
+            class="volume-icon"
+            src="img/icons/volume-x.svg"
+            alt="Volume Toggle Icon"
+          />
+        </button>
+        <a
+          class="settings-btn tooltip-element"
+          data-tooltip="SETTINGS"
+          href="#"
+        >
+          <img src="img/icons/settings.svg" alt="Settings Icon" />
+        </a>
+        <a
+          class="top-btn tooltip-element"
+          data-tooltip="BACK TO TOP"
+          href="#home"
+        >
+          <img src="img/icons/arrow-up-circle.svg" alt="Back-To-Top Icon" />
+        </a>
+      </div>
+    </aside>
 
     <main class="main">
-        <section class="solo-project-section">
-            <div class="container">
-                <div class="title-container">
-                    <h1 class="section-title">weather web-app</h1>
-                    <a href="index.html#projects"><i class="fa-solid fa-arrow-left"></i></a>
-                </div>
-       
-                <div class="layout">
-                    <div class="slideshow" data-slider>
-                        <!-- tutorial used: https://www.youtube.com/watch?v=9HcxHDS2w1s&t=740s&ab_channel=WebDevSimplified -->
-                        <ul data-slides>
-                            <li data-active><img src="img/project-imgs/weather-web-app/1.JPG" alt="slider image 1"></li>
-                            <li><img src="img/project-imgs/weather-web-app/2.JPG" alt="slider image 2"></li>
-                            <li><img src="img/project-imgs/weather-web-app/3.JPG" alt="slider image 3"></li>
-                            <li><img src="img/project-imgs/weather-web-app/4.JPG" alt="slider image 4"></li>
-                            <li><img src="img/project-imgs/weather-web-app/5.JPG" alt="slider image 3"></li>
-                            <li><img src="img/project-imgs/weather-web-app/6.JPG" alt="slider image 4"></li>
-                            <li><img src="img/project-imgs/weather-web-app/7.JPG" alt="slider image 4"></li>
-                        </ul>
+      <section class="solo-project-section">
+        <div class="container">
+          <div class="title-container">
+            <h1 class="section-title">weather web-app</h1>
+            <a href="index.html#projects"
+              ><i class="fa-solid fa-arrow-left"></i
+            ></a>
+          </div>
 
-                        <button class="slideshow-btn prev" data-slider-btn="prev"><i class="fa-solid fa-caret-left"></i></button>
-                        <button class="slideshow-btn next" data-slider-btn="next"><i class="fa-solid fa-caret-right"></i></button>
+          <div class="layout">
+            <div class="slideshow" data-slider>
+              <!-- tutorial used: https://www.youtube.com/watch?v=9HcxHDS2w1s&t=740s&ab_channel=WebDevSimplified -->
+              <ul data-slides>
+                <li data-active>
+                  <img
+                    src="img/project-imgs/weather-web-app/1.JPG"
+                    alt="slider image 1"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="img/project-imgs/weather-web-app/2.JPG"
+                    alt="slider image 2"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="img/project-imgs/weather-web-app/3.JPG"
+                    alt="slider image 3"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="img/project-imgs/weather-web-app/4.JPG"
+                    alt="slider image 4"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="img/project-imgs/weather-web-app/5.JPG"
+                    alt="slider image 3"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="img/project-imgs/weather-web-app/6.JPG"
+                    alt="slider image 4"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="img/project-imgs/weather-web-app/7.JPG"
+                    alt="slider image 4"
+                  />
+                </li>
+              </ul>
 
-                        <div class="pagination">
-                            <div class="dot active-dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                        </div>
-                    </div>
+              <button class="slideshow-btn prev" data-slider-btn="prev">
+                <i class="fa-solid fa-caret-left"></i>
+              </button>
+              <button class="slideshow-btn next" data-slider-btn="next">
+                <i class="fa-solid fa-caret-right"></i>
+              </button>
 
-                    <div class="btn-container">
-                        <a href="https://amrit-kooner.github.io/weather-web-app/" class="btn" target="_blank">demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <a href="https://github.com/Amrit-Kooner/weather-web-app" class="btn" target="_blank">github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-
-                    <div class="description">
-                        <div class="creation-date">16/06/23</div>
-                        <p>
-                            This project was my first attempt that of linking and fetching data asynchronous from an API to then display it using DOM manipulation. I decided to make a weather web-app as its simple concept since its my first APIs project, 
-                            and also because the API used was very simple and straightforward to setup being the Open Weather API. Originally, it was developed so the user could only search by city, but then I relasized it would be better if the user could
-                            also search by the country as well to filter out cities with the same name. HTML and CSS was not the main focus of this project but it still ended up being visually appealing. Overall, it was a intesting and enjoyable project as 
-                            it involved new conepetes for me to learn being Asyrcnous programming with the fetch API function. It took me 3-4 days to complete as it wasn’t a large project with it having only a few hundren lines of HTML, CSS and JavsScript. 
-                            From it, I gained a better grasp at Asyrcnous programming with the fetch API function in JavaScript as well as DOM maniputlation.
-                        </p>
-
-                        <div class="features">
-                            <h3>features</h3>
-                            <ul>
-                                <li>Displays current wind speed, humidty and temperature of specified location via City and Country.</li>
-                                <li>Data is always accurate and live as it utilized the open weather API.</li>
-                                <li>Provides alerts and warning to the user if they have not enetered a Country, City or the specified location does not exist.</li>
-                            </ul>
-                        </div>
-
-                        <a class="btn" href="https://www.figma.com/file/fclO4yiToQAEAvcby8Uvsx/weather-web-app-design?type=design&node-id=0-1&mode=design&t=zzaUy7K0pexA4L7L-0" target="_blank">figma designs <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                
-                <div class="project-tags scrollable">
-                    <div>html</div>
-                    <div>css</div>
-                    <div>javascript</div>
-                    <div>open weather api</div>
-                </div>
+              <div class="pagination">
+                <div class="dot active-dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
             </div>
-        </section>
-    </main> 
-</body>
+
+            <div class="btn-container">
+              <a
+                href="https://amrit-kooner.github.io/weather-web-app/"
+                class="btn"
+                target="_blank"
+                >demo <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+              <a
+                href="https://github.com/Amrit-Kooner/weather-web-app"
+                class="btn"
+                target="_blank"
+                >github <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+
+            <div class="description">
+              <div class="creation-date">16/06/23</div>
+              <p>
+                This project was my first attempt of linking and fetching data
+                asynchronous from an API to then display it using DOM
+                manipulation. I decided to make a weather web-app as its simple
+                concept since its my first APIs project, and also because the
+                API used was very simple and straightforward to setup being the
+                Open Weather API. Originally, it was developed so the user could
+                only search by city, but then I relasized it would be better if
+                the user could also search by the country as well to filter out
+                cities with the same name. HTML and CSS was not the main focus
+                of this project but it still ended up being visually appealing.
+                Overall, it was a intesting and enjoyable project as it involved
+                new conepetes for me to learn being Asyrcnous programming with
+                the fetch API function. It took me 3-4 days to complete as it
+                wasn’t a large project with it having only a few hundren lines
+                of HTML, CSS and JavsScript. From it, I gained a better grasp at
+                Asyrcnous programming with the fetch API function in JavaScript
+                as well as DOM maniputlation.
+              </p>
+
+              <div class="features">
+                <h3>features</h3>
+                <ul>
+                  <li>
+                    Displays current wind speed, humidty and temperature of
+                    specified location via City and Country.
+                  </li>
+                  <li>
+                    Data is always accurate and live as it utilized the open
+                    weather API.
+                  </li>
+                  <li>
+                    Provides alerts and warning to the user if they have not
+                    enetered a Country, City or the specified location does not
+                    exist.
+                  </li>
+                </ul>
+              </div>
+
+              <a
+                class="btn"
+                href="https://www.figma.com/file/fclO4yiToQAEAvcby8Uvsx/weather-web-app-design?type=design&node-id=0-1&mode=design&t=zzaUy7K0pexA4L7L-0"
+                target="_blank"
+                >figma designs
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project-tags scrollable">
+            <div>html</div>
+            <div>css</div>
+            <div>javascript</div>
+            <div>open weather api</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
