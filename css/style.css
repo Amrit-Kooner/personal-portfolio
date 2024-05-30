@@ -91,10 +91,9 @@ body::-webkit-scrollbar-thumb{
 }
 
 /* for firefox */
-body,
-.scrollable{
+/* body, .scrollable{
     scrollbar-color: var(--clr-accent) var(--clr-text-1);
-}
+} */
 
 .tooltip-element::after,
 .tooltip-element::before{
@@ -459,6 +458,7 @@ body,
     color: var(--clr-accent);
     letter-spacing: 0.75px;
     font-size: 1.4rem;
+    text-wrap: nowrap;
 }
 
 .skill-progression-bars .skill-progress:not(:last-child){
