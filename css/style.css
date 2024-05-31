@@ -545,6 +545,10 @@ body::-webkit-scrollbar-thumb{
     color: inherit;
 }
 
+.project p{
+    min-height: 5.5rem;
+}
+
 .project-img-wrapper{
     height: 25rem;
 }
