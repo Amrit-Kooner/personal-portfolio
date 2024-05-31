@@ -546,7 +546,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .project p{
-    min-height: 5.5rem;
+    min-height: 7rem;
 }
 
 .project-img-wrapper{
